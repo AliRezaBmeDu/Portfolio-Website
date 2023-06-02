@@ -12,6 +12,18 @@
   }
 }
 
+@media only screen (min-width: 768px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  .myInfo {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 .appbar {
   position: relative;
   width: 100%;
