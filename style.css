@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+    max-width: 375px;
+    margin: auto;
+}
+.appbar {
+    position: relative;
+    width: 375px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 44px;
+    bottom: 0px;
+}
+
+.mylogo {
+    width: 76px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070FF;
+}
+
+.hamburger {
+    color: #6070FF;
+    height: 74%;
+    padding-right: 20%;
+}
+
+.myInfo {
+    gap: 10px;
+    height: 100vh;
+    left: calc(50% - 375px/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    background-image: url("./images/header-shapes\ mobile.png");
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 327px;
+    padding: 0% 8% 0% 8%;
+}
+
+.hero_title {
+    height: 120px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #172B4D;
+}
+
+.hero_desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+}
+
+.contact {
+    position: relative;
+    top: -5%;
+    padding: 0% 8% 0% 8%
+}
+.contact-text {
+    width: 117px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F8CFF;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 170.17px;
+    height: 12px;
+    flex: none;
+    flex-grow: 0;
+}
