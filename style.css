@@ -12,18 +12,6 @@
   }
 }
 
-@media only screen (min-width: 768px) {
-  body {
-    width: 100%;
-    margin: auto;
-  }
-
-  .myInfo {
-    width: 100vw;
-    height: 100vh;
-  }
-}
-
 .appbar {
   position: relative;
   width: 100%;
@@ -58,10 +46,22 @@
   color: #6070ff;
 }
 
-.hamburger {
+/* .hamburger {
   color: #6070ff;
   height: 74%;
   padding-right: 30%;
+} */
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.burger {
+  background-color: hsl(234, 100%, 69%);
+  width: 1.5em;
+  height: 0.3em;
+  margin: 0.3em 0;
 }
 
 .myInfo {
@@ -106,7 +106,7 @@
 
 .contact {
   position: relative;
-  top: -4.6rem;
+  top: -5rem;
   padding: 0% 8% 0% 8%;
 }
 

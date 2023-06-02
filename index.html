@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +7,29 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        -->
     </head>
     <body>
-        <section class="appbar">
+        <header class="appbar header">
             <div class = "toolbar">
                 <div class="mylogo">
-                    My Logo
+                    <a href="">My Logo</a>
                 </div>
                 <nav class="menu-container">
-                    <a href="" class="hamburger" ">
+                    <button href="">
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                    </button> 
+                    <!--<a href="" class="hamburger">
                         <i class="fa fa-bars"></i>
-                    </a> 
+                    </a>  -->
                 </nav>
             </div>
-        </section>
-        <section class="myInfo" id="home">
+        </header>
+        <section class="myInfo main" id="home">
             <div class="hero-text">
                 <h1 class="hero_title">I'm Reza.<br>Glad to see you!</h1>
                 <p class="hero_desc">
@@ -32,28 +39,29 @@
                     
                 </p>
             </div>
+
             <div class="contact">
                 <div class="contact-text">Let's Connect</div>
                 <div class="social-icons">
                     <span>
-                        <a href="" alt="twitter"><img src="./icons/twitter.svg" /></a>
+                        <a href=""><img src="./icons/twitter.svg" alt="twitter" /></a>
                     </span>
                     <span>
-                        <a href="" alt="linkedin"><img src="./icons/Linkedin icon.svg" /></a>
+                        <a href=""><img src="./icons/Linkedin icon.svg"  alt="linkedin"/></a>
                     </span>
                     <span>
-                        <a href="" alt="medium"><img src="./icons/medium.svg" /></a>
+                        <a href="" ><img src="./icons/medium.svg" alt="medium"/></a>
                     </span>
                     <span>
-                        <a href="" alt="github"><img src="./icons/github.svg" /></a>
+                        <a href=""><img src="./icons/github.svg"  alt="github"/></a>
                     </span>
                     <span>
-                        <a href="" alt="angellist"><img src="./icons/angellist.svg" /></a>
+                        <a href="" ><img src="./icons/angellist.svg" alt="angellist"/></a>
                     </span>
                 </div>
                 
             </div>
-                
         </section>
+        
     </body>
 </html>
