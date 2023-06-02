@@ -154,7 +154,7 @@ If you like this project please give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-All the Microverse provided descriptive documents.
+All documents provided by Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
