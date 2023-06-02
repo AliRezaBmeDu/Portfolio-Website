@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
-body {
-    max-width: 375px;
-    margin: auto;
+@media only screen and (max-width: 768px) and (min-width: 375px)  {
+    body {
+        width: 100%;
+        margin: auto;
+    }
+    .myInfo {
+        width: 100vw;
+        height: 100vh;
+    }
 }
 .appbar {
     position: relative;
-    width: 375px;
-    height: 92px;
+    width: 100%;
+    height: 7rem;
     left: 0px;
     top: 0px;
 }
@@ -19,18 +24,19 @@ body {
     position: absolute;
     left: 8%;
     right: 8%;
-    top: 44px;
+    top: 5%;
     bottom: 0px;
+    padding-top: 2rem
 }
 
 .mylogo {
-    width: 76px;
-    height: 20px;
+    width: 30%;
+    height: 2rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.2rem;
+    line-height: 10%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -40,13 +46,12 @@ body {
 .hamburger {
     color: #6070FF;
     height: 74%;
-    padding-right: 20%;
+    padding-right: 30%;
 }
 
 .myInfo {
-    gap: 10px;
-    height: 100vh;
-    left: calc(50% - 375px/2);
+    gap: 1rem;
+    /*left: calc(50% - 375px/2);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,21 +62,21 @@ body {
 
 .hero-text {
     position: relative;
-    top: -40px;
+    top: -9%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 327px;
+    width: 80%;
     padding: 0% 8% 0% 8%;
 }
 
 .hero_title {
-    height: 120px;
+    height: 6.5rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     color: #172B4D;
 }
 
@@ -79,32 +84,33 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.4rem;
     color: #344563;
+    top: -2%
 }
 
 .contact {
     position: relative;
-    top: -5%;
+    top: -4.6rem;
     padding: 0% 8% 0% 8%
 }
 .contact-text {
-    width: 117px;
-    height: 24px;
+    width: 80%;
+    height: 80%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.4rem;
     color: #7F8CFF;
 }
 
 .social-icons {
     display: flex;
     justify-content: space-between;
-    width: 170.17px;
-    height: 12px;
+    width: 45%;
+    height: 1rem;
     flex: none;
     flex-grow: 0;
 }
