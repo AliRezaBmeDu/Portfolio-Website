@@ -3,7 +3,7 @@
 @media only screen and (max-width: 768px) and (min-width: 375px) {
   body {
     margin: auto;
-    background-color: black;
+    background-color: #fff;
   }
 
   .main {
@@ -165,6 +165,8 @@ button {
   margin: auto;
   padding-top: 6rem;
   background: #fff;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem
 }
 
 .project-card {
@@ -187,7 +189,7 @@ button {
 
 .project-card > h2 {
   padding-left: 0.5em;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   color: #172B4D;
@@ -271,6 +273,261 @@ button {
   left: 1em
 }
 
+.about-title {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+  display: flex;
+  align-items: center;
+}
+.about-myself {
+  position: relative;
+  top: -1rem;
+}
+.letsconnect {
+  position: relative;
+  top: -2em;
+}
+
+.resume-button {
+  background-color: whitesmoke;
+  width: 40%;
+  text-align: center;
+  height: 0.1rem;
+  border-radius: 0.8em;
+  margin-bottom: 1rem;
+  padding: 1.5em 1em 2em 0.3em;
+  border: 1px solid;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 0.2rem;
+  text-align: center;
+  color: #6070ff;
+}
+
+.myself {
+  position: relative;
+  background-color: #fff;
+  background-image: url("./images/Base\ about\ my\ self.png");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
+  margin-right: 1.3rem;
+  margin-left: 1.3rem
+}
+
+
+.languages > h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.language-skill {
+  list-style-type: none;
+}
+.skill {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+  box-sizing: border-box;
+  background: #F7F7F9;
+  border-radius: 8px;
+  margin-top: 0.5em;
+  position: relative;
+  left: -2rem;
+  padding-left: 1em;
+}
+.name-lang {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.skill > img {
+  max-width: 15%;
+  max-height: 7rem;
+  margin: 0.1em;
+}
+
+.frameworks {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 8px;
+  margin-top: 0.5em;
+  position: relative;
+  left: -2rem;
+  padding-left: 1em;
+  padding-top: 2em;
+  margin-top: 1em;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem
+}
+
+
+.right {
+  display: flex;
+  margin-left: auto;
+  text-align: center;
+  background-color: transparent;
+  font-size: large;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.hr {
+  position: relative;
+  left: -1em;
+  width: 100%;
+  background-color: #DFE1E6;
+  height: 0.1em;
+}
+
+.contact-me {
+  background-color: #fff;
+  background-image: url("./images/Contact\ me.png");
+  background-size: cover;
+  height: 130vh;
+  margin-top: 5rem;
+}
+
+
+.contact-me-here {
+  width: 100%;
+  background-image: url("./images/contact\ form\ shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.contact-title {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 10rem;
+
+}
+.contact-me-text {
+  width: 327px;
+  height: 137px;
+  left: 24px;
+  top: 4802px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+}
+
+.input-box {
+  margin: 1em 2em 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 90%;
+  height: 3rem;
+  background: #FFFFFF;
+  border-radius: 1em;
+}
+.input-text{
+  display:flex;
+  flex-direction: column;
+  padding-left: 1em;
+  justify-content: center;
+  font-size: medium;
+}
+textarea {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  margin-top: 1em;
+  height: 60%;
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+  left: -6.5em;
+}
+.message-box {
+  margin: 1em 2em 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 90%;
+  height: 10rem;
+  background: #FFFFFF;
+  border-radius: 1em;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B3BAC5;
+}
+
+.getintouch {
+  background-color: white;
+  width: 40%;
+  height: 2rem;
+  border-radius: 0.8em;
+  margin-bottom: 1rem;
+  padding: 1.5em 1em 2em 0.3em;
+  border: 1px solid;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 0.2rem;
+  text-align: center;
+  color: #6070ff;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 1.06rem;
+  margin-top: 1rem;
+  padding-left: 1.3em;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.message-box, .input-box:hover{
+  cursor:text;
+}
 
 
 
@@ -280,21 +537,8 @@ button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .icon:hover,
+/* 
+.icon:hover,
 a:hover,
 button:hover {
   animation: spin 10s linear infinite;
