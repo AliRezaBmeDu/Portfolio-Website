@@ -3,6 +3,7 @@
 @media only screen and (max-width: 768px) and (min-width: 375px) {
   body {
     margin: auto;
+    background-color: black;
   }
 
   .main {
@@ -157,7 +158,143 @@ button {
   padding-left: 0;
 }
 
-.icon:hover,
+.project-grid {
+  display: grid;
+  box-sizing: border-box;
+  border-radius: 5%;
+  margin: auto;
+  padding-top: 6rem;
+  background: #fff;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  margin-top: 4rem;
+  border: 1em;
+  background-color: #fff;
+}
+
+.project-img > img {
+  max-width: 95%;
+  max-height: 100%;
+  display: block;
+  margin-left: 0.7rem;
+  margin-top: 1rem;
+}
+
+.project-card > h2 {
+  padding-left: 0.5em;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  color: #172B4D;
+}
+
+.overhead {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: relative;
+  top: -1em;
+  left: -1.5em;
+  padding-right: 0.8em;
+}
+
+.overhead-1 {
+  color: #344563;
+  list-style-type: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  
+}
+.overhead :not(.overhead-1) {
+  color: #7A869A;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.project-detail {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #344563;
+  padding-left: 1em;
+  position: relative;
+  top: -1em;
+}
+
+.built-with {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  list-style-type: none;
+  position: relative;
+  left: -1.5em;
+}
+.build {
+  background-color: #ebebff;
+  width: 150%;
+  text-align: center;
+  height: 1rem;
+  border-radius: 1.5em;
+  padding: 1.1em 1em 2em 0.3em;
+  border: none;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+.see {
+  background-color: whitesmoke;
+  width: 40%;
+  text-align: center;
+  height: 0.1rem;
+  border-radius: 0.8em;
+  margin-bottom: 1rem;
+  padding: 1.5em 1em 2em 0.3em;
+  border: 1px solid;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 0.2rem;
+  text-align: center;
+  color: #6070ff;
+  position: relative;
+  left: 1em
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .icon:hover,
 a:hover,
 button:hover {
   animation: spin 10s linear infinite;
@@ -171,4 +308,4 @@ button:hover {
   to {
     transform: rotate(360deg);
   }
-}
+} */
