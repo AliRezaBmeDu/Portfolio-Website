@@ -348,7 +348,7 @@ button {
   background-color: transparent;
   font-size: large;
   margin-right: 2rem;
-  margin-top: 1.1rem;
+  margin-top: 1rem;
   margin-bottom: 1em;
 }
 
@@ -417,7 +417,7 @@ button {
   background-color: transparent;
   font-size: large;
   margin-right: 2rem;
-  margin-top: 1.1rem;
+  margin-top: 0.2rem;
 }
 
 .hr {
@@ -564,4 +564,14 @@ button:hover {
 button:active {
   background-color: darkblue;
   color: white;
+}
+
+.button-burger:hover {
+  cursor: pointer;
+  background-color: rgba(58, 192, 17, 0.26);
+  color: white;
+}
+
+.button-burger:active {
+  background-color: #172b4d;
 }
