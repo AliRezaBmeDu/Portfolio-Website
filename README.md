@@ -77,7 +77,7 @@ Install this project with:
 
 ```sh
   cd Portfolio-Website
-npm install
+  npm install
 ```
 
 ### Usage
