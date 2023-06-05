@@ -248,7 +248,7 @@ button {
   width: 100%;
   text-align: center;
   height: 2.5rem;
-  border-radius: 1.1em;
+  border-radius: 8px;
   padding: 0.8em;
   border: none;
   color: #6070ff;
@@ -341,7 +341,6 @@ button {
 }
 
 .lang-button {
-  transform: rotate(90deg);
   display: flex;
   margin-left: auto;
   text-align: center;
@@ -408,6 +407,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.frameworks > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .right {
@@ -574,4 +580,15 @@ button:active {
 
 .button-burger:active {
   background-color: #172b4d;
+}
+
+.lang-button:hover,
+.right:hover {
+  background-color: #c6d8f7;
+}
+
+.lang-button:active,
+.right:active {
+  background-color: #3496f1;
+  color: white;
 }
