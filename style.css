@@ -235,12 +235,15 @@ button {
 }
 
 .built-with {
-  display: flex;
-  justify-content: space-between;
   max-width: 80%;
   list-style-type: none;
   position: relative;
   left: -1.5em;
+}
+
+.built-with li {
+  float: left;
+  margin-right: 8px;
 }
 
 .build {
