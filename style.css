@@ -504,18 +504,18 @@ button {
   font-family: 'Poppins', sans-serif;
   font-size: large;
   border-radius: 1em;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
 }
 
 input[type='text'] {
   padding-left: 10px;
-  max-width : calc(100% - 10px);
+  max-width: calc(100% - 10px);
   color: black;
 }
 
 input[type='email'] {
   padding-left: 10px;
-  max-width : calc(100% - 10px);
+  max-width: calc(100% - 10px);
   color: black;
   font-size: large;
 }
@@ -523,7 +523,6 @@ input[type='email'] {
 .message-box {
   margin: auto;
   width: 100%;
-  padding-left: 1px;
   height: 8rem;
   background: #fff;
   border-radius: 1em;
@@ -533,7 +532,7 @@ input[type='email'] {
   color: black;
   padding-left: 10px;
   padding-top: 10px;
-  max-width : calc(100% - 10px);
+  max-width: calc(100% - 10px);
 }
 
 .getintouch {
