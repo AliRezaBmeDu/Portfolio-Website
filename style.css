@@ -441,20 +441,21 @@ button {
   background-color: #fff;
   background-image: url("./images/Contact\ me.png");
   background-size: cover;
-  height: 130vh;
+  height: 112vh;
   margin-top: 5rem;
+  padding: 0;
 }
 
 .contact-me-here {
   width: 100%;
-  background-image: url("./images/contact\ form\ shapes-mobile.svg");
+  background-image: url("./images/contact\ form\ shapes-mobile@2x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 100% 0;
+  background-size: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: relative;
+  margin-top: 2rem;
 }
 
 .contact-title {
@@ -468,14 +469,13 @@ button {
   align-items: center;
   text-align: center;
   color: #fff;
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .contact-me-text {
   width: 327px;
   height: 137px;
   left: 24px;
-  top: 4802px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -483,61 +483,72 @@ button {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  margin-top: -1rem;
 }
 
 .contact-form {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
+  width: 90%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2.5rem;
 }
 
 .input-box {
   width: 100%;
   height: 3rem;
   background: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
   border-radius: 1em;
   border: 1px solid #CFD8DC;
 }
 
-.input-text {
-  font-size: large;
+input[type='text'] {
+  padding-left: 10px;
+  max-width : calc(100% - 10px);
+  color: black;
 }
 
+input[type='email'] {
+  padding-left: 10px;
+  max-width : calc(100% - 10px);
+  color: black;
+  font-size: large;
+}
 
 .message-box {
   margin: auto;
   width: 100%;
-  height: 10rem;
+  padding-left: 1px;
+  height: 8rem;
   background: #fff;
   border-radius: 1em;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  font-size: large;
   color: black;
+  padding-left: 10px;
+  padding-top: 10px;
+  max-width : calc(100% - 10px);
 }
-
-
 
 .getintouch {
   background-color: white;
-  width: 40%;
-  height: 2rem;
+  height: 3rem;
   border-radius: 0.8em;
-  margin-bottom: 1rem;
-  padding: 1.5em 1em 2em 0.3em;
   border: 1px solid;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
-  line-height: 0.2rem;
   text-align: center;
   color: #6070ff;
-  display: flex;
-  align-self: flex-start;
-  margin-left: 1.06rem;
-  margin-top: 1rem;
-  padding-left: 1.3em;
+  position: relative;
+  padding: 0 1rem;
 }
 
 a:hover {
@@ -579,4 +590,13 @@ button:active {
 .right:active {
   background-color: #3496f1;
   color: white;
+}
+
+.the-end {
+  background-color: black;
+  width: 40%;
+  height: 0.3em;
+  text-align: center;
+  margin: auto;
+  margin-top: 2.5rem;
 }
