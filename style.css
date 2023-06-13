@@ -503,13 +503,11 @@ button {
   height: 48px;
   background: #fff;
   font-family: 'Poppins', sans-serif;
-  font-size: large;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   left: 16px;
   right: 38px;
-  top: calc(50% - 18px/2);
-  font-family: 'Poppins';
+  top: calc(50% - 9px);
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -518,7 +516,7 @@ button {
 }
 
 input[type='text'] {
-  top: calc(50% - 18px/2);
+  top: calc(50% - 9px);
   right: 38px;
   padding-left: 16px;
   max-width: calc(100% - 16px);
@@ -526,7 +524,7 @@ input[type='text'] {
 }
 
 input[type='email'] {
-  top: calc(50% - 18px/2);
+  top: calc(50% - 9px);
   right: 38px;
   padding-left: 16px;
   max-width: calc(100% - 16px);
@@ -534,7 +532,7 @@ input[type='email'] {
 }
 
 input::placeholder {
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .message-box {
@@ -620,5 +618,5 @@ button:active {
   text-align: center;
   margin: auto;
   position: relative;
-  top: -1rem;
+  top: -8px;
 }
