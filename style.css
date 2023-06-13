@@ -444,18 +444,19 @@ button {
   height: 112vh;
   margin-top: 5rem;
   padding: 0;
+  padding-top: 2rem;
 }
 
 .contact-me-here {
   width: 100%;
-  background-image: url("./images/contact\ form\ shapes-mobile@2x.png");
+  height: 100%;
+  background-image: url("./images/contact\ form\ shapes-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 100% 0;
-  background-size: 70%;
+  background-position: 100% 0%;
+  background-size: 57.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .contact-title {
@@ -469,7 +470,7 @@ button {
   align-items: center;
   text-align: center;
   color: #fff;
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .contact-me-text {
@@ -490,64 +491,85 @@ button {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  gap: 10px;
-  width: 90%;
+  gap: 18px;
+  width: 87.2%;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .input-box {
   width: 100%;
-  height: 3rem;
+  height: 48px;
   background: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: large;
-  border-radius: 1em;
+  border-radius: 8px;
   border: 1px solid #cfd8dc;
+  left: 16px;
+  right: 38px;
+  top: calc(50% - 18px/2);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  align-items: center;
 }
 
 input[type='text'] {
-  padding-left: 10px;
-  max-width: calc(100% - 10px);
+  top: calc(50% - 18px/2);
+  right: 38px;
+  padding-left: 16px;
+  max-width: calc(100% - 16px);
   color: black;
 }
 
 input[type='email'] {
-  padding-left: 10px;
-  max-width: calc(100% - 10px);
+  top: calc(50% - 18px/2);
+  right: 38px;
+  padding-left: 16px;
+  max-width: calc(100% - 16px);
   color: black;
-  font-size: large;
+}
+
+input::placeholder {
+  color: #172B4D;
 }
 
 .message-box {
   margin: auto;
   width: 100%;
+  right: 38px;
+  bottom: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
   height: 8rem;
   background: #fff;
-  border-radius: 1em;
+  border-radius: 8px;
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-size: large;
   color: black;
-  padding-left: 10px;
-  padding-top: 10px;
-  max-width: calc(100% - 10px);
+  padding-left: 16px;
+  padding-top: 15px;
+  max-width: calc(100% - 16px);
 }
 
 .getintouch {
   background-color: white;
-  height: 3rem;
-  border-radius: 0.8em;
+  width: 40%;
+  height: 48px;
+  border-radius: 8px;
   border: 1px solid;
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 17px;
+  line-height: 24px;
   text-align: center;
   color: #6070ff;
-  position: relative;
-  padding: 0 1rem;
+  padding: 12px, 16px, 12px, 16px;
+  align-items: center;
 }
 
 a:hover {
@@ -597,5 +619,6 @@ button:active {
   height: 0.3em;
   text-align: center;
   margin: auto;
-  margin-top: 2.5rem;
+  position: relative;
+  top: -1rem;
 }
