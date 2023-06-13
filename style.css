@@ -489,6 +489,7 @@ button {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  gap: 20px;
 }
 
 .input-box {
