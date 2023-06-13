@@ -497,14 +497,11 @@ button {
   height: 3rem;
   background: #fff;
   border-radius: 1em;
+  border: 1px solid #CFD8DC;
 }
 
 .input-text {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1em;
-  justify-content: center;
-  font-size: medium;
+  font-size: large;
 }
 
 
