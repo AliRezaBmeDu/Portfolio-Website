@@ -244,8 +244,8 @@
             
             <div class="hr"></div>
         
-            
         </section>
+
         <section class="contact-me">
             <div class="contact-me-here">
                 <h1 class="contact-title">Contact me</h1>
@@ -253,17 +253,18 @@
                     If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
                     I’d love to help with it!
                 </p>
-                <div class="input-box"><p class="input-text">Your Name</p></div>
-                <div class="input-box"><p class="input-text">Your Mail</p></div>
-                <div class="message-box"><p class="input-text">Write your messages here...</p></div>
-                <button class="getintouch"><a>Get in touch</a></button>
-
-        </div>
-
+            
+                <form class="contact-form" 
+                action="https://formspree.io/f/xwkjgpya" method="POST">
+                    <input class="input-box" type="text" placeholder="Lorem Ipsum" maxlength="30" name="name" required/>
+                    <input class="input-box" type="email" placeholder="loremipsum@gmail.com" name="email" required/>
+                    <textarea class="message-box" maxlength="500" name="message" placeholder="Write your message here..." required></textarea>
+                    <button class="getintouch" type="submit">Get in touch</button>
+                </form>
+            </div>
+            <div class="the-end"></div>
+            
         </section>
-
-
-        
         
     </body>
 </html>

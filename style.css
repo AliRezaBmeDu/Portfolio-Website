@@ -235,12 +235,15 @@ button {
 }
 
 .built-with {
-  display: flex;
-  justify-content: space-between;
   max-width: 80%;
   list-style-type: none;
   position: relative;
   left: -1.5em;
+}
+
+.built-with li {
+  float: left;
+  margin-right: 8px;
 }
 
 .build {
@@ -438,20 +441,22 @@ button {
   background-color: #fff;
   background-image: url("./images/Contact\ me.png");
   background-size: cover;
-  height: 130vh;
+  height: 112vh;
   margin-top: 5rem;
+  padding: 0;
+  padding-top: 2rem;
 }
 
 .contact-me-here {
   width: 100%;
+  height: 100%;
   background-image: url("./images/contact\ form\ shapes-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 100% 0%;
+  background-size: 57.5%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .contact-title {
@@ -465,14 +470,13 @@ button {
   align-items: center;
   text-align: center;
   color: #fff;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .contact-me-text {
   width: 327px;
   height: 137px;
   left: 24px;
-  top: 4802px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -480,76 +484,90 @@ button {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  margin-top: -1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 18px;
+  width: 87.2%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
 }
 
 .input-box {
-  margin: 1em 2em 0 1em;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: 90%;
-  height: 3rem;
+  width: 100%;
+  height: 48px;
   background: #fff;
-  border-radius: 1em;
-}
-
-.input-text {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1em;
-  justify-content: center;
-  font-size: medium;
-}
-
-textarea {
-  background: #fff;
-  border: 1px solid #cfd8dc;
+  font-family: 'Poppins', sans-serif;
   border-radius: 8px;
-  margin-top: 1em;
-  height: 60%;
-  display: flex;
-  align-self: flex-start;
-  position: relative;
-  left: -6.5em;
+  border: 1px solid #cfd8dc;
+  left: 16px;
+  right: 38px;
+  top: calc(50% - 9px);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  align-items: center;
+}
+
+input[type='text'] {
+  top: calc(50% - 9px);
+  right: 38px;
+  padding-left: 16px;
+  max-width: calc(100% - 16px);
+  color: black;
+}
+
+input[type='email'] {
+  top: calc(50% - 9px);
+  right: 38px;
+  padding-left: 16px;
+  max-width: calc(100% - 16px);
+  color: black;
+}
+
+input::placeholder {
+  color: #172b4d;
 }
 
 .message-box {
-  margin: 1em 2em 0 1em;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  width: 90%;
-  height: 10rem;
-  background: #fff;
-  border-radius: 1em;
-  font-family: 'Poppins', sans-serif;
+  margin: auto;
+  width: 100%;
+  right: 38px;
+  bottom: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #b3bac5;
+  height: 8rem;
+  background: #fff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  padding-left: 16px;
+  padding-top: 15px;
+  max-width: calc(100% - 16px);
 }
 
 .getintouch {
   background-color: white;
   width: 40%;
-  height: 2rem;
-  border-radius: 0.8em;
-  margin-bottom: 1rem;
-  padding: 1.5em 1em 2em 0.3em;
+  height: 48px;
+  border-radius: 8px;
   border: 1px solid;
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 1em;
-  line-height: 0.2rem;
+  font-size: 17px;
+  line-height: 24px;
   text-align: center;
   color: #6070ff;
-  display: flex;
-  align-self: flex-start;
-  margin-left: 1.06rem;
-  margin-top: 1rem;
-  padding-left: 1.3em;
+  padding: 12px, 16px, 12px, 16px;
+  align-items: center;
 }
 
 a:hover {
@@ -591,4 +609,14 @@ button:active {
 .right:active {
   background-color: #3496f1;
   color: white;
+}
+
+.the-end {
+  background-color: black;
+  width: 40%;
+  height: 0.3em;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: -8px;
 }
