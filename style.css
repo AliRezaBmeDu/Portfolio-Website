@@ -1,20 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-@media only screen and (max-width: 768px) and (min-width: 375px) {
-  body {
-    margin: auto;
-    background-color: #fff;
-  }
-
-  .main {
-    width: 100vw;
-    height: 100vh;
-  }
-}
 
 @media (max-width: 1080px) {
   body {
-    max-width: 750px;
+    max-width: 768px;
     margin: auto;
   }
 
@@ -24,7 +13,7 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 768px) {
   body {
     max-width: 375px;
     margin: auto;
@@ -35,11 +24,27 @@
     height: 100%;
   }
 
-  .mylogo {
+  .mylogo-mobile {
     line-height: 80%;
     width: 70%;
     height: 2em;
     font-size: 0.5em;
+  }
+  
+  .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  /* .body {
+    max-width: 768px;
+  } */
+  .mobile{
+    display: none;
+  }
+  .appbar{
+    max-width: 768px;
   }
 }
 
@@ -63,7 +68,39 @@
   padding-top: 2rem;
 }
 
-.mylogo {
+.toolbar-d {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 11%;
+  width: 100%;
+}
+
+.mylogo-desktop {
+  position: relative;
+  top: 12.5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.toolbar-d > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.mylogo-mobile {
   width: 30%;
   height: 2rem;
   font-family: 'Poppins', sans-serif;
@@ -93,10 +130,21 @@ button {
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
-  background-image: url("./images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-position: inherit;
-  background-size: cover;
+  @media (max-width: 768px) {
+    background-image: url("./images/header-shapes\ mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+  }
+  @media (min-width: 768px) {
+    background-image: url("./images/desktop/Header\ bg@2x.png");
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    line-height: 10px;
+  }
 }
 
 .hero-text {
@@ -132,6 +180,10 @@ button {
   position: relative;
   top: -1rem;
   padding: 0% 8% 0% 8%;
+  @media only screen and (min-width:768px) {
+    align-self: baseline;
+    padding-left: 9.8%;
+  }
 }
 
 .contact-text {
@@ -143,6 +195,9 @@ button {
   font-size: 1rem;
   line-height: 4rem;
   color: #7f8cff;
+  @media only screen and (min-width:768px) {
+    float: left;
+  }
 }
 
 .social-icons {
@@ -156,6 +211,10 @@ button {
   list-style-type: none;
   flex-grow: 0;
   padding-left: 0;
+  @media only screen and (min-width:768px) {
+    align-self: baseline;
+    gap: 10px;
+  }
 }
 
 .project-grid {
