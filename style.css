@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
-
 @media (max-width: 1080px) {
   body {
     max-width: 768px;
@@ -32,33 +31,37 @@
   }
 
   .contact-me {
-   height: 112vh;
+    height: 112vh;
   }
-  
+
   .desktop {
     display: none;
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   /* .body {
     background-color: black;
   } */
-  .mobile{
+  .mobile {
     display: none;
   }
+
   .project-desktop {
     display: flexbox;
     margin-left: 1rem;
   }
+
   .myself-lang-desktop {
     display: flexbox;
     margin-left: 1rem;
     width: 100%;
   }
+
   /* .appbar{
     max-width: 768px;
   } */
+
   /* .contact-me {
     height: 100vh;
   } */
@@ -70,7 +73,8 @@
   height: 7rem;
   left: 0;
   top: 0;
-  @media only screen and (min-width:768px){
+
+  @media only screen and (min-width: 768px) {
     /* background-image: url("./images/desktop/contact\ form\ background\ shapes@2x.png"); */
   }
 }
@@ -151,12 +155,14 @@ button {
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: inherit;
+
   @media (max-width: 768px) {
     background-image: url("./images/header-shapes\ mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: inherit;
   }
+
   @media (min-width: 768px) {
     background-image: url("./images/desktop/Header\ bg@2x.png");
     background-size: contain;
@@ -199,7 +205,8 @@ button {
   position: relative;
   top: -1rem;
   padding: 0% 8% 0% 8%;
-  @media only screen and (min-width:768px) {
+
+  @media only screen and (min-width: 768px) {
     align-self: baseline;
     padding-left: 9.8%;
   }
@@ -214,7 +221,8 @@ button {
   font-size: 1rem;
   line-height: 4rem;
   color: #7f8cff;
-  @media only screen and (min-width:768px) {
+
+  @media only screen and (min-width: 768px) {
     float: left;
   }
 }
@@ -230,7 +238,8 @@ button {
   list-style-type: none;
   flex-grow: 0;
   padding-left: 0;
-  @media only screen and (min-width:768px) {
+
+  @media only screen and (min-width: 768px) {
     align-self: baseline;
     gap: 10px;
   }
@@ -255,7 +264,8 @@ button {
   margin-top: 5rem;
   border: 1em;
   background-color: #fff;
-  @media only screen and (min-width:768px){
+
+  @media only screen and (min-width: 768px) {
     width: 90vw;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -269,6 +279,21 @@ button {
   display: block;
   margin-left: 0.7rem;
   margin-top: 1rem;
+}
+
+.languagebar > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.frameworks > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .project-card > .project-desktop > h2 {
@@ -358,7 +383,8 @@ button {
   text-align: center;
   margin-left: 1em;
   margin-top: 1.5rem;
-  @media only screen and (min-width:768px){
+
+  @media only screen and (min-width: 768px) {
     height: 3em;
     width: 40%;
   }
@@ -419,7 +445,8 @@ button {
   margin-right: 1.3rem;
   margin-left: 1.3rem;
   margin-top: 10rem;
-  @media only screen and (min-width:768px){
+
+  @media only screen and (min-width: 768px) {
     justify-content: space-between;
     justify-items: center;
     background-image: url("./images/desktop/about\ myself\ -\ background-\ shape-\ desktop.svg");
@@ -450,14 +477,6 @@ button {
   margin-bottom: 1em;
 }
 
-.languagebar > h2 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-
 .language-skill {
   width: 100%;
   list-style-type: none;
@@ -465,7 +484,8 @@ button {
   margin-top: 2rem;
   position: relative;
   left: -2.5em;
-  @media only screen and (min-width:768px) {
+
+  @media only screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
@@ -482,7 +502,8 @@ button {
   padding-left: 1em;
   text-align: center;
   margin-top: 0.8em;
-  @media only screen and (min-width:768px){
+
+  @media only screen and (min-width: 768px) {
     margin: auto;
     flex-direction: column;
     height: 3rem;
@@ -507,7 +528,8 @@ button {
   max-width: 30%;
   max-height: 3rem;
   margin: 0.1em;
-  @media only screen and (min-width:768px){
+
+  @media only screen and (min-width: 768px) {
     max-height: 3.9rem;
     max-width: 35%;
   }
@@ -523,13 +545,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.frameworks > h2 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
 }
 
 .right {
@@ -557,6 +572,7 @@ button {
   padding-top: 2rem;
   background-image: url("./images/Contact\ me.png");
   background-size: cover;
+
   @media only screen and (min-width: 768px) {
     background-image: url("./images/desktop/contact\ form-\ background-shape-desktop.svg");
   }
@@ -572,7 +588,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media only screen and (min-width:768px){
+
+  @media only screen and (min-width: 768px) {
     background-image: url(./images/desktop/contact\ form\ background\ shapes@2x.png);
     background-size: 90% 100%;
     align-self: center;
@@ -605,7 +622,8 @@ button {
   text-align: center;
   color: #ebebff;
   margin-top: -1rem;
-  @media only screen and (min-width: 768px){
+
+  @media only screen and (min-width: 768px) {
     width: 70%;
     max-width: 700px;
   }
@@ -620,7 +638,8 @@ button {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 2rem;
-  @media only screen and (min-width:768px) {
+
+  @media only screen and (min-width: 768px) {
     width: 50%;
     max-width: 500px;
     margin-top: -20pt;
@@ -644,7 +663,8 @@ button {
   font-size: 17px;
   line-height: 20px;
   align-items: center;
-  @media only screen and (min-width:768px) {
+
+  @media only screen and (min-width: 768px) {
     border-radius: 2px;
   }
 }
@@ -686,7 +706,8 @@ input::placeholder {
   padding-left: 16px;
   padding-top: 15px;
   max-width: calc(100% - 16px);
-  @media only screen and (min-width:768px) {
+
+  @media only screen and (min-width: 768px) {
     border-radius: 2px;
     margin-left: -2px;
   }
@@ -706,7 +727,8 @@ input::placeholder {
   color: #6070ff;
   padding: 12px, 16px, 12px, 16px;
   align-items: center;
-  @media only screen and (max-width:768px) {
+
+  @media only screen and (max-width: 768px) {
     align-self: center;
   }
 }
