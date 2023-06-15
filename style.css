@@ -101,7 +101,7 @@
 .mylogo-desktop {
   position: relative;
   top: 12.5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -116,7 +116,7 @@
   justify-content: space-between;
   align-items: flex-end;
   gap: 32px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -126,7 +126,7 @@
 .mylogo-mobile {
   width: 30%;
   height: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.2rem;
@@ -134,6 +134,14 @@
   align-items: center;
   text-align: center;
   color: #6070ff;
+}
+
+.mylogo-mobile a {
+  transition: color 2s;
+}
+
+.mylogo-mobile a:hover {
+  color: red;
 }
 
 button {
@@ -183,7 +191,7 @@ button {
 
 .hero_title {
   height: 6.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -192,7 +200,7 @@ button {
 }
 
 .hero_desc {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -215,7 +223,7 @@ button {
 .contact-text {
   width: 80%;
   height: 80%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -282,7 +290,7 @@ button {
 }
 
 .languagebar > h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -290,7 +298,7 @@ button {
 }
 
 .frameworks > h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -298,7 +306,7 @@ button {
 
 .project-card > .project-desktop > h2 {
   padding-left: 0.5em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   color: #172b4d;
@@ -319,20 +327,20 @@ button {
 .overhead-1 {
   color: #344563;
   list-style-type: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
 }
 
 .overhead :not(.overhead-1) {
   color: #7a869a;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
 }
 
 .project-detail {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -375,7 +383,7 @@ button {
   border-radius: 0.8em;
   padding: 1em;
   border: 1px solid;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -392,7 +400,7 @@ button {
 
 .about-title {
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -405,7 +413,7 @@ button {
 .about-myself {
   position: relative;
   top: -1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -427,7 +435,7 @@ button {
   padding: 1em;
   margin: auto;
   border: 1px solid;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -513,7 +521,7 @@ button {
 }
 
 .name-lang {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -598,7 +606,7 @@ button {
 
 .contact-title {
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -614,7 +622,7 @@ button {
   width: 327px;
   height: 137px;
   left: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -652,7 +660,7 @@ button {
   width: 100%;
   height: 48px;
   background: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   left: 16px;
@@ -669,7 +677,7 @@ button {
   }
 }
 
-input[type='text'] {
+input[type="text"] {
   top: calc(50% - 9px);
   right: 38px;
   padding-left: 16px;
@@ -677,7 +685,7 @@ input[type='text'] {
   color: black;
 }
 
-input[type='email'] {
+input[type="email"] {
   top: calc(50% - 9px);
   right: 38px;
   padding-left: 16px;
@@ -701,7 +709,7 @@ input::placeholder {
   height: 8rem;
   background: #fff;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
   padding-left: 16px;
   padding-top: 15px;
@@ -719,7 +727,7 @@ input::placeholder {
   height: 48px;
   border-radius: 8px;
   border: 1px solid;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
