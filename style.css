@@ -359,8 +359,8 @@ button {
   margin-left: 1em;
   margin-top: 1.5rem;
   @media only screen and (min-width:768px){
-    height: 15%;
-    width: 30%;
+    height: 3em;
+    width: 40%;
   }
 }
 
