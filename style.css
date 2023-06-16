@@ -19,7 +19,6 @@
     margin-top: 1rem;
     object-fit: cover;
   }
-  
 
   .mylogo-mobile {
     line-height: 80%;
@@ -46,9 +45,10 @@
     max-width: 767px;
   }
 
-  .body{
+  .body {
     background-color: black;
   }
+
   .mobile {
     display: none;
   }
@@ -67,13 +67,14 @@
     margin-left: 1rem;
     width: 91%;
     margin-top: -0.4rem;
-    @media screen and (min-width:767px) {
+
+    @media screen and (min-width: 767px) {
       margin-top: 25.7px;
     }
 
     /* height: 80%; */
   }
-  
+
   .project-img > img {
     max-width: 100%;
     max-height: 100%;
@@ -91,6 +92,7 @@
 
   .footside > li > a > img {
     height: 12px;
+
     /* width: 70%; */
   }
 
@@ -98,10 +100,9 @@
     height: 80%;
   }
 
-  .appbar{
+  .appbar {
     max-width: 800px;
   }
-
 }
 
 .appbar {
@@ -230,16 +231,18 @@ button {
 }
 
 .hero_title {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     height: 6.5rem;
     font-size: 2.5rem;
     line-height: 3rem;
   }
+
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   color: #172b4d;
-  @media screen and (min-width:767px) {
+
+  @media screen and (min-width: 767px) {
     height: 35.7px;
     font-size: 25.5px;
     line-height: 35.3px;
@@ -253,10 +256,12 @@ button {
     line-height: 1.5rem;
     top: -2%;
   }
+
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #344563;
+
   @media only screen and (min-width: 767px) {
     font-size: 11px;
     line-height: 15px;
@@ -276,17 +281,17 @@ button {
     position: relative;
     left: -11.8rem;
     top: 3.2rem;
-
   }
 }
 
 .contact-text {
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     width: 80%;
     height: 80%;
     font-size: 1rem;
     line-height: 4rem;
   }
+
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -303,18 +308,20 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
   @media only screen and (max-width: 767px) {
     width: 45%;
     height: 1rem;
   }
+
   list-style-type: none;
   padding-left: 0;
+
   @media only screen and (min-width: 767px) {
     width: 112px;
     height: 11px;
     position: relative;
     top: 0.5rem;
-
   }
 }
 
@@ -329,8 +336,9 @@ button {
   margin-right: 1.5rem;
 
   @media only screen and (min-width: 767px) {
-    margin-top: 10rem;
-    gap: 6rem;
+    margin-top: 4rem;
+    gap: 5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -342,24 +350,12 @@ button {
   margin-top: 4rem;
   border: 1em;
   background-color: #fff;
+
   @media only screen and (min-width: 767px) {
     flex-direction: row;
     justify-content: space-between;
     grid-template-columns: 50% 50%;
     padding-left: 5rem;
-  }
-}
-
-.project-card > .project-desktop > h2 {
-  padding-left: 0.5em;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  color: #172b4d;
-  justify-items: baseline;
-
-  @media only screen and (min-width: 767px) {
-    font-size: 22px;
   }
 }
 
@@ -377,7 +373,9 @@ button {
     justify-content: flex-start;
     font-size: 9.58px;
     gap: 22px;
-    top: 2px; left:11px; padding: 0;
+    top: 2px;
+    left: 11px;
+    padding: 0;
   }
 }
 
@@ -423,15 +421,18 @@ button {
   max-width: 80%;
   list-style-type: none;
   position: relative;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     position: relative;
     left: -1.5em;
   }
+
   @media only screen and (min-width: 767px) {
     font-size: 8.51px;
     left: -0.4em;
     gap: 0.1rem;
     padding: 4px 12px;
+
     /* width: 28.2px; */
     height: 12.76px;
     margin-top: 24px;
@@ -473,12 +474,14 @@ button {
   text-align: center;
   margin-left: 1em;
   margin-top: 1.5rem;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     width: 40%;
     height: 15%;
     border-radius: 0.8em;
     padding: 1em;
   }
+
   @media only screen and (min-width: 767px) {
     /* width: 67px; */
     height: 25.53px;
@@ -507,22 +510,24 @@ button {
     margin-top: 6rem;
     display: flex;
     justify-content: space-between;
-    gap: -0px;
+    gap: -0;
     background-image: url("./images/desktop/about\ myself\ -\ background-\ shape-\ desktop.svg");
     width: 100%;
   }
 }
 
 .about {
-  @media screen and (min-width:767px) {
+  @media screen and (min-width: 767px) {
     display: flex;
     flex-direction: column;
     gap: 7px;
     width: 100%;
+
     /* background-color: #5e75db; */
     padding-left: 30px;
   }
 }
+
 .about-title {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -576,12 +581,15 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
   @media only screen and (max-width: 767px) {
     width: 45%;
     height: 1rem;
   }
+
   list-style-type: none;
   padding-left: 0;
+
   @media only screen and (min-width: 767px) {
     width: 112px;
     height: 11px;
@@ -591,15 +599,16 @@ button {
   }
 }
 
-
 .resume-button {
   background-color: white;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     width: 50%;
     border-radius: 0.8em;
     padding: 1em;
     margin: auto;
   }
+
   border: 1px solid;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -618,12 +627,12 @@ button {
   }
 }
 
-
 .myself-lang-desktop {
-  @media screen and (min-width:767px) {
+  @media screen and (min-width: 767px) {
     display: flex;
     flex-direction: column;
     width: 100%;
+
     /* background-color: #e3f826; */
     gap: 19.2px;
     margin-left: -2em;
@@ -633,7 +642,8 @@ button {
 
 .languages {
   align-items: baseline;
-  @media screen and (min-width:767px) {
+
+  @media screen and (min-width: 767px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -643,9 +653,11 @@ button {
 .languagebar {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width:767px) {
-   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
   }
+
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
     width: 100%;
@@ -656,7 +668,8 @@ button {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -670,17 +683,32 @@ button {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     font-size: 20px;
     line-height: 24px;
   }
+
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
   }
 }
 
+.project-card > .project-desktop > h2 {
+  padding-left: 0.5em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #172b4d;
+  justify-items: baseline;
+
+  @media only screen and (min-width: 767px) {
+    font-size: 22px;
+  }
+}
+
 .lang-button {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     margin-right: 2rem;
     margin-top: 1rem;
     margin-bottom: 1em;
@@ -702,7 +730,8 @@ button {
 .language-skill {
   width: 100%;
   list-style-type: none;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-top: 2rem;
     position: relative;
@@ -743,12 +772,13 @@ button {
   color: #253858;
   text-align: center;
   position: relative;
+
   @media only screen and (max-width: 767px) {
     top: -1em;
     font-size: 15px;
     line-height: 20px;
   }
-  
+
   @media only screen and (min-width: 767px) {
     font-size: 8px;
     top: -0.5em;
@@ -768,12 +798,13 @@ button {
 }
 
 .lang-img {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     width: 48px;
     height: 24px;
     top: 11px;
   }
-  @media screen and (min-width:767px) {
+
+  @media screen and (min-width: 767px) {
     width: 25.5px;
     height: 25.5px;
     top: 7px;
@@ -788,9 +819,11 @@ button {
 .frameworks {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width:767px) {
-   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
   }
+
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
     width: 100%;
@@ -798,7 +831,7 @@ button {
 }
 
 .right {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     margin-right: 2rem;
     margin-top: 1rem;
     margin-bottom: 1em;
@@ -807,26 +840,29 @@ button {
 
 .hr {
   position: relative;
-  @media screen and (max-width:767px) {
-    left: -1em; 
+
+  @media screen and (max-width: 767px) {
+    left: -1em;
   }
+
   width: 100%;
   background-color: #dfe1e6;
   height: 0.1em;
-  @media screen and (min-width:767px) {
+
+  @media screen and (min-width: 767px) {
     top: -12px;
   }
 }
 
 .second {
-  @media screen and (min-width:767px) {
+  @media screen and (min-width: 767px) {
     position: relative;
     top: -12px;
   }
 }
 
 .second2 {
-  @media screen and (min-width:767px) {
+  @media screen and (min-width: 767px) {
     position: relative;
     top: -24px;
   }
@@ -835,14 +871,13 @@ button {
 .contact-me {
   background-color: #fff;
   margin-top: 5rem;
-  
+
   @media only screen and (max-width: 767px) {
     padding: 0;
     padding-top: 2rem;
     background-image: url("./images/Contact\ me.png");
     background-size: cover;
   }
-  
 
   @media only screen and (min-width: 767px) {
     padding: 40.5px;
@@ -856,13 +891,14 @@ button {
 }
 
 .contact-me-here {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     background-image: url("./images/contact\ form\ shapes-mobile.svg");
     background-repeat: no-repeat;
     background-position: 100% 0%;
     background-size: 57.5%;
     height: 100%;
   }
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -882,6 +918,7 @@ button {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
+
   @media only screen and (max-width: 767px) {
     position: relative;
     font-size: 23px;
@@ -889,6 +926,7 @@ button {
     display: flex;
     margin-top: 5rem;
   }
+
   align-items: center;
   text-align: center;
   color: #fff;
@@ -897,7 +935,6 @@ button {
     position: relative;
     top: 35px;
     font-size: 25px;
-
   }
 }
 
@@ -905,6 +942,7 @@ button {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
+
   @media only screen and (max-width: 767px) {
     width: 327px;
     height: 137px;
@@ -913,8 +951,10 @@ button {
     line-height: 28px;
     margin-top: -1rem;
   }
+
   text-align: center;
   color: #ebebff;
+
   @media only screen and (min-width: 767px) {
     width: 50%;
     max-width: 302px;
@@ -930,6 +970,7 @@ button {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+
   @media only screen and (max-width: 767px) {
     gap: 18px;
     width: 87.2%;
@@ -937,6 +978,7 @@ button {
     margin-right: 1rem;
     margin-top: 2rem;
   }
+
   @media only screen and (min-width: 767px) {
     width: 238px;
     gap: 13px;
@@ -949,6 +991,7 @@ button {
   background: #fff;
   font-family: "Poppins", sans-serif;
   border: 1px solid #cfd8dc;
+
   @media only screen and (max-width: 767px) {
     width: 100%;
     height: 48px;
@@ -961,7 +1004,9 @@ button {
     line-height: 20px;
     border-radius: 8px;
   }
+
   align-items: center;
+
   @media only screen and (min-width: 767px) {
     border-radius: 1px;
     font-size: 9px;
@@ -972,29 +1017,32 @@ button {
 }
 
 input[type="text"] {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     top: calc(50% - 9px);
     right: 38px;
     padding-left: 16px;
     max-width: calc(100% - 16px);
   }
 
-  @media screen and (min-width:767px) {
+  @media screen and (min-width: 767px) {
     padding: 9px;
   }
+
   color: black;
 }
 
 input[type="email"] {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     top: calc(50% - 9px);
     right: 38px;
     padding-left: 16px;
     max-width: calc(100% - 16px);
   }
-  @media screen and (min-width:767px) {
+
+  @media screen and (min-width: 767px) {
     padding: 9px;
   }
+
   color: black;
 }
 
@@ -1003,7 +1051,7 @@ input::placeholder {
 }
 
 .message-box {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     margin: auto;
     width: 100%;
     right: 38px;
@@ -1021,7 +1069,6 @@ input::placeholder {
     padding-top: 15px;
     max-width: calc(100% - 16px);
   }
-  
 
   @media only screen and (min-width: 767px) {
     border-radius: 1px;
@@ -1035,6 +1082,7 @@ input::placeholder {
 
 .getintouch {
   background-color: white;
+
   @media only screen and (max-width: 767px) {
     width: 40%;
     height: 48px;
@@ -1044,10 +1092,12 @@ input::placeholder {
     font-size: 17px;
     line-height: 24px;
   }
+
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-align: center;
   color: #6070ff;
+
   /* align-items: center; */
   @media only screen and (min-width: 767px) {
     align-self: center;
