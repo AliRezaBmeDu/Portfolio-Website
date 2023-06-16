@@ -59,6 +59,17 @@
     display: flexbox;
     margin-left: 1rem;
     width: 100%;
+    height: 100%;
+    gap: 3rem;
+  }
+
+  .about {
+    margin-top: -1.4rem;
+  }
+
+  .footside{
+    position: relative;
+    top: 1rem;
   }
 
   /* .appbar{
@@ -232,7 +243,6 @@ button {
   font-size: 1rem;
   line-height: 4rem;
   color: #7f8cff;
-
   @media only screen and (min-width: 768px) {
     float: left;
   }
@@ -252,7 +262,9 @@ button {
 
   @media only screen and (min-width: 768px) {
     align-self: baseline;
-    gap: 10px;
+    gap: 20px;
+    top: -3px;
+    font-size: 1rem;
   }
 }
 
@@ -434,6 +446,27 @@ button {
   }
 }
 
+.myself {
+  position: relative;
+  background-color: #fff;
+  background-image: url("./images/Base\ about\ my\ self.png");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
+  margin-right: 1.3rem;
+  margin-left: 1.3rem;
+  margin-top: 10rem;
+  @media only screen and (min-width: 768px) {
+    margin-left: 5rem;
+    justify-content: space-between;
+    justify-items: center;
+    background-image: url("./images/desktop/about\ myself\ -\ background-\ shape-\ desktop.svg");
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
 .about-title {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -444,6 +477,9 @@ button {
   color: #172b4d;
   display: flex;
   align-items: center;
+  @media only screen and (min-width:768px){
+    font-size: 2rem;
+  }
 }
 
 .about-myself {
@@ -455,18 +491,28 @@ button {
   font-size: 1rem;
   line-height: 1.7rem;
   color: #344563;
+  @media only screen and (min-width:768px){
+    width: 90%;
+    top: -1.4rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
 }
 
 .letsconnect {
   position: relative;
   top: -2em;
   align-items: baseline;
+  @media only screen and (min-width:768px){
+    font-size: 0.9rem;
+    top: -2.5rem;
+  }
 }
+
 
 .resume-button {
   background-color: white;
   width: 50%;
-  height: 10%;
   border-radius: 0.8em;
   padding: 1em;
   margin: auto;
@@ -477,26 +523,10 @@ button {
   font-size: 1em;
   color: #6070ff;
   text-align: center;
-}
-
-.myself {
-  position: relative;
-  background-color: #fff;
-  background-image: url("./images/Base\ about\ my\ self.png");
-  background-repeat: no-repeat;
-  background-position: inherit;
-  background-size: cover;
-  margin-right: 1.3rem;
-  margin-left: 1.3rem;
-  margin-top: 10rem;
-
-  @media only screen and (min-width: 768px) {
-    justify-content: space-between;
-    justify-items: center;
-    background-image: url("./images/desktop/about\ myself\ -\ background-\ shape-\ desktop.svg");
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  @media only screen and (min-width:768px){
+    font-size: 0.9rem;
+    top: -1rem;
+    width: 40%;
   }
 }
 
@@ -770,9 +800,9 @@ input::placeholder {
   text-align: center;
   color: #6070ff;
   padding: 12px, 16px, 12px, 16px;
-  align-items: center;
+  /* align-items: center; */
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) {
     align-self: center;
   }
 }
