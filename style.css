@@ -85,6 +85,9 @@
     margin-top: -1.4rem;
   }
 
+  .social-icons > li > a > img {
+    height: 12px;
+  }
 
   .footside > li > a > img {
     height: 12px;
@@ -130,12 +133,13 @@
 
 .mylogo-desktop {
   position: relative;
-  top: 12.5px;
+  top: 5px;
+  left: 37px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 11.2px;
   align-items: center;
   text-align: center;
 }
@@ -145,11 +149,11 @@
   list-style-type: none;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 32px;
+  gap: 17px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 7.5px;
   line-height: 20px;
 }
 
@@ -206,11 +210,13 @@ button {
   }
 
   @media (min-width: 767px) {
-    background-image: url("./images/desktop/Header\ bg@2x.png");
-    background-size: contain;
-    background-position: center;
+    background-image: url("./images/desktop/headerImg.png");
+    background-size: 100% 99.5%;
     align-items: center;
     line-height: 10px;
+    height: 450px;
+    width: 100%;
+    margin-left: 2rem;
   }
 }
 
@@ -224,52 +230,70 @@ button {
 }
 
 .hero_title {
-  height: 6.5rem;
+  @media screen and (max-width:767px) {
+    height: 6.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3rem;
   color: #172b4d;
+  @media screen and (min-width:767px) {
+    height: 35.7px;
+    font-size: 25.5px;
+    line-height: 35.3px;
+    top: 10px;
+  }
 }
 
 .hero_desc {
+  @media screen and (max-width: 767px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    top: -2%;
+  }
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
   color: #344563;
-  top: -2%;
-
   @media only screen and (min-width: 767px) {
-    font-size: 0.9rem;
+    font-size: 11px;
+    line-height: 15px;
+    position: relative;
+    top: 2.5rem;
   }
 }
 
 .contact {
-  position: relative;
-  top: -1rem;
-  padding: 0% 8% 0% 8%;
+  @media only screen and (max-width: 767px) {
+    position: relative;
+    top: -1rem;
+    padding: 0% 8% 0% 8%;
+  }
 
   @media only screen and (min-width: 767px) {
-    align-self: baseline;
-    padding-left: 9.8%;
+    position: relative;
+    left: -11.8rem;
+    top: 3.2rem;
+
   }
 }
 
 .contact-text {
-  width: 80%;
-  height: 80%;
+  @media screen and (max-width: 767px){
+    width: 80%;
+    height: 80%;
+    font-size: 1rem;
+    line-height: 4rem;
+  }
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 4rem;
   color: #7f8cff;
 
   @media only screen and (min-width: 767px) {
-    float: left;
+    font-size: 11px;
   }
 }
 
@@ -279,15 +303,18 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 45%;
-  height: 1rem;
+  @media only screen and (max-width: 767px) {
+    width: 45%;
+    height: 1rem;
+  }
   list-style-type: none;
   padding-left: 0;
-
   @media only screen and (min-width: 767px) {
-    gap: 12px;
     width: 112px;
-    padding: 5px;
+    height: 11px;
+    position: relative;
+    top: 0.5rem;
+
   }
 }
 
@@ -531,18 +558,39 @@ button {
 
 .letsconnect {
   position: relative;
-  top: -2em;
+  top: -1.5em;
   align-items: baseline;
 
   @media only screen and (min-width: 767px) {
     font-size: 8.5px;
-    top: -3.5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
   }
 }
+
+.media-icons {
+  position: relative;
+  top: -1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media only screen and (max-width: 767px) {
+    width: 45%;
+    height: 1rem;
+  }
+  list-style-type: none;
+  padding-left: 0;
+  @media only screen and (min-width: 767px) {
+    width: 112px;
+    height: 11px;
+    position: relative;
+    top: 2px;
+    left: 1px;
+  }
+}
+
 
 .resume-button {
   background-color: white;
@@ -566,6 +614,7 @@ button {
     height: 26px;
     padding: 6px;
     border-radius: 4px;
+    margin-top: 2em;
   }
 }
 
