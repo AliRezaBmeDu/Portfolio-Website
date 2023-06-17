@@ -1010,7 +1010,7 @@ button {
 
   @media only screen and (min-width: 767px) {
     position: relative;
-    top: 35px;
+    top: 18px;
     font-size: 25px;
   }
 }
@@ -1038,7 +1038,7 @@ button {
     font-size: 11px;
     line-height: 16px;
     position: relative;
-    top: 25px;
+    top: -35px;
     left: -2.5px;
   }
 }
@@ -1059,8 +1059,9 @@ button {
   @media only screen and (min-width: 767px) {
     width: 238px;
     gap: 13px;
-    margin-top: 30px;
     align-items: center;
+    position: relative;
+    top: -5rem;
   }
 }
 
