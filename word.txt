@@ -1,0 +1,54 @@
+ <section id="video-comments">                      
+                <div id="comment-user-log">
+                    <img id="comment-user-log-img" class="comment-img" src="css/img/user-log.jpg" alt="">
+                   <input id="make-comment" type="text" placeholder="write ...">
+                </div>
+                <div id="users-comments">
+                    <div id="comment1" class="users-comments">
+                        <img id="comment-user-img" class="comment-img" src="css/img/userimg.jpg" alt="">
+
+                            <h5  id="user-name">
+                                @Userdessc11433
+                            </h5>
+                            <div id="comment" >
+                                <h4>A remark to what happening at 04:12 is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</h4>
+                            </div>
+                            <div id="likes-unlikes">
+                                <img id="comment-like" src="css/img/like.png" alt="">
+                                <img id="comment-unlike" src="css/img/unlike.png" alt="">
+                                <p>Replay</p>
+                            </div>
+                    </div>
+
+                    <div id="comment2" class="users-comments">
+                        <img id="comment-user-img" class="comment-img" src="css/img/userimg.jpg" alt="">
+
+                            <h5  id="user-name">
+                                @FlokyFfloky11433
+                            </h5>
+                            <div id="comment" >
+                                <h4>A redfg515616516515612dd5d5d5d5d5drk to what happening at 04:12 is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</h4>
+                            </div>
+                            <div id="likes-unlikes">
+                                <img id="comment-like" src="css/img/like.png" alt="">
+                                <img id="comment-unlike" src="css/img/unlike.png" alt="">
+                                <p>Replay</p>
+                            </div>
+                    </div>
+                    <div id="comment2" class="users-comments">
+                        <img id="comment-user-img" class="comment-img" src="css/img/userimg.jpg" alt="">
+
+                            <h5  id="user-name">
+                                @Cabitocabbito
+                            </h5>
+                            <div id="comment" >
+                                <h4>A reeenen.</h4>
+                            </div>
+                            <div id="likes-unlikes">
+                                <img id="comment-like" src="css/img/like.png" alt="">
+                                <img id="comment-unlike" src="css/img/unlike.png" alt="">
+                                <p>Replay</p>
+                            </div>
+                    </div>
+                </div>
+    </section> 

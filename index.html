@@ -9,20 +9,30 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+
         <header class="appbar header">
-            <div class = "toolbar">
-                <div class="mylogo">
+            <div class = "toolbar mobile">
+                <div class="mylogo-mobile mobile">
                     <a href="">My Logo</a>
                 </div>
-                <nav class="menu-container">
-                    <button class="button-burger" href="">
+                <nav class="menu-container mobile">
+                    <button class="button-burger mobile" href="">
                         <div class="burger"></div>
                         <div class="burger"></div>
                         <div class="burger"></div>
                     </button>
                 </nav>
             </div>
+            <nav class = "toolbar-d desktop">
+                <div class="mylogo-desktop desktop"><a href="">My Logo</a></div>
+                <ul class="desktop navlist">
+                  <li class="desktop">Portfolio</li>
+                  <li class="desktop">About</li>
+                  <li class="desktop">Contact</li>
+                </ul>
+            </nav>
         </header>
+
         <section class="myInfo main" id="home">
             <div class="hero-text">
                 <h1 class="hero_title">I'm Reza.<br>Glad to see you!</h1>
@@ -33,7 +43,6 @@
                     
                 </p>
             </div>
-
             <div class="contact">
                 <div class="contact-text">Let's Connect</div>
                 <ul class="social-icons">
@@ -52,129 +61,168 @@
                     <li class="icon">
                         <a href="https://wellfound.com/u/mohammad-ali-reza" ><img src="./icons/angellist.svg" alt="angellist"/></a>
                     </li>
-                </ul>
-                
+                </ul> 
             </div>
         </section>
+        
         <section class="project-grid">
+            <!--First Project-->
             <div class="project-card">
-                <a href="" class="project-img"><img src="./works/project01.png" /></a>
-                <h2>Tonic</h2>
-                <div class="project-overhead">
-                    <ul class="overhead">
-                        <li class="overhead-1">Canopy</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
+                <a href="" class="project-img desktop"><img src="./images/desktop/project01.png" /></a>
+                <a href="" class="project-img mobile"><img src="./works/project01.png" /></a>
+                <div class="project-desktop">
+                    <h2>Tonic</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead new">
+                            <li class="overhead-1">Canopy</li>
+                            <li>Back End Dev</li>
+                            <li>2015</li>
+                        </ul>
+                    </div>
+                    <p class="project-detail">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <ul class="built-with newbltwth">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">JavaScript</button>
+                        </li>
                     </ul>
+                    <button class="see">See Project</button>
                 </div>
-                <p class="project-detail">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="built-with">
-                    <li>
-                        <button class="build">HTML</button>
-                    </li>
-                    <li>
-                        <button class="build">CSS</button>
-                    </li>
-                    <li>
-                        <button class="build">JavaScript</button>
-                    </li>
-                </ul>
-                <button class="see">See Project</button>
             </div>
             
             <!--Second Project-->
             <div class="project-card">
-                <a href="" class="project-img"><img src="./works/project02.png" /></a>
-                <h2>Multi-Post Stories</h2>
-                <div class="project-overhead">
-                    <ul class="overhead">
-                        <li class="overhead-1">Canopy</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
+                <a href="" class="project-img mobile"><img src="./works/project02.png" /></a>
+                <div class="project-desktop">
+                    <h2>Multi-Post Stories</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead">
+                            <li class="overhead-1 mobile">Canopy</li>
+                            <li class="overhead-1 desktop">Facebook</li>
+                            <li class="mobile">Back End Dev</li>
+                            <li class="desktop">Full Stack Dev</li>
+                            <li>2015</li>
+                        </ul>
+                    </div>
+                    <p class="project-detail mobile">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <p class="project-detail desktop">
+                        Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+                    </p>
+                    <ul class="built-with">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li class="desktop">
+                            <button class="build dekstop">Ruby on rails</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">javaScript</button>
+                        </li>
                     </ul>
+                    <button class="see">See Project</button>
                 </div>
-                <p class="project-detail">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="built-with">
-                    <li>
-                        <button class="build">HTML</button>
-                    </li>
-                    <li>
-                        <button class="build">CSS</button>
-                    </li>
-                    <li>
-                        <button class="build">JavaScript</button>
-                    </li>
-                </ul>
-                <button class="see">See Project</button>
+                <a href="" class="project-img desktop"><img src="./images/desktop/project02.png" /></a>
             </div>
 
-             <!--Project3-->
+             <!--Third Project-->
              <div class="project-card">
-                <a href="" class="project-img"><img src="./works/project03.png" /></a>
-                <h2>Tonic</h2>
-                <div class="project-overhead">
-                    <ul class="overhead">
-                        <li class="overhead-1">Canopy</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
+                <a href="" class="project-img mobile"><img src="./works/project03.png" /></a>
+                <a href="" class="project-img desktop"><img src="./images/desktop/project03.png" /></a>
+                <div class="project-desktop">
+                    <h2 class="mobile">Tonic</h2>
+                    <h2 class="desktop">Facebook 360</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead">
+                            <li class="overhead-1 mobile">Canopy</li>
+                            <li class="overhead-1 desktop">FACEBOOK</li>
+                            <li class="mobile">Back End Dev</li>
+                            <li class="desktop">Full Stack Dev</li>
+                            <li>2015</li>
+                        </ul>
+                    </div>
+                    <p class="project-detail mobile">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <p class="project-detail desktop">
+                        Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                    </p>
+                    
+                    <ul class="built-with">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li class="desktop">
+                            <button class="build dekstop">Ruby on rails</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">JavaScript</button>
+                        </li>
                     </ul>
+                    <button class="see">See Project</button>
                 </div>
-                <p class="project-detail">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="built-with">
-                    <li>
-                        <button class="build">HTML</button>
-                    </li>
-                    <li>
-                        <button class="build">CSS</button>
-                    </li>
-                    <li>
-                        <button class="build">JavaScript</button>
-                    </li>
-                </ul>
-                <button class="see">See Project</button>
             </div>
 
-             <!--Project4-->
+             <!--Fourth Project-->
              <div class="project-card">
-                <a href="" class="project-img"><img src="./works/project04.png" /></a>
-                <h2>Multi-Post Stories</h2>
-                <div class="project-overhead">
-                    <ul class="overhead">
-                        <li class="overhead-1">Canopy</li>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
+                <a href="" class="project-img mobile"><img src="./works/project04.png" /></a>
+                <div class="project-desktop">
+                    <h2 class="mobile">Multi-Post Stories</h2>
+                    <h2 class="desktop">Uber Navigation</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead new">
+                            <li class="overhead-1 mobile">Canopy</li>
+                            <li class="mobile">Back End Dev</li>
+                            <li class="mobile">2015</li>
+                            <li class="overhead-1 desktop">Uber</li>
+                            <li class="desktop">Lead Developer</li>
+                            <li class="desktop">2018</li>
+                        </ul>
+                    </div>
+                    <p class="project-detail mobile">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <p class="project-detail desktop">
+                        A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+                    </p>
+                    <ul class="built-with">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li class="desktop">
+                            <button class="build dekstop">Ruby on rails</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">JavaScript</button>
+                        </li>
                     </ul>
+                    <button class="see">See Project</button>
                 </div>
-                <p class="project-detail">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="built-with">
-                    <li>
-                        <button class="build">HTML</button>
-                    </li>
-                    <li>
-                        <button class="build">CSS</button>
-                    </li>
-                    <li>
-                        <button class="build">JavaScript</button>
-                    </li>
-                </ul>
-                <button class="see">See Project</button>
+                <a href="" class="project-img desktop"><img src="./images/desktop/project04.png" /></a>
             </div>
-
 
         </section>
+
         <section class="myself">
             <div class="about">
-
                 <h2 class="about-title">About Myself</h2>
-
                 <p class="about-myself">
                     Hello I’m a software developer! I can help you build a product , feature or website. Look through 
                     some of my work and experience! If you like what you see and have a project you need coded, 
@@ -182,68 +230,68 @@
                 </p>
                 <div class="letsconnect">
                     <div class="contact-text">Let's Connect</div>
-                        <ul class="social-icons">
-                            <li class="icon">
-                                <a href="https://twitter.com/share_insider"><img src="./icons/twitter.svg" alt="twitter" /></a>
-                            </li>
-                            <li class="icon">
-                                <a href="https://www.linkedin.com/in/mohammad-ali-reza-389717102/"><img src="./icons/Linkedin icon.svg"  alt="linkedin"/></a>
-                            </li>
-                            <li class="icon">
-                                <a href="https://medium.com/@ali.reza.buet" ><img src="./icons/medium.svg" alt="medium"/></a>
-                            </li>
-                            <li class="icon">
-                                <a href="https://github.com/AliRezaBmeDu"><img src="./icons/github.svg"  alt="github"/></a>
-                            </li>
-                            <li class="icon">
-                                <a href="https://wellfound.com/u/mohammad-ali-reza" ><img src="./icons/angellist.svg" alt="angellist"/></a>
-                            </li>
-                        </ul>
-                        <button class="resume-button">Get my resume</button>
-                    </div>
+                    <ul class="media-icons footside">
+                        <li class="icon">
+                            <a href="https://twitter.com/share_insider"><img src="./icons/twitter.svg" alt="twitter" /></a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://www.linkedin.com/in/mohammad-ali-reza-389717102/"><img src="./icons/Linkedin icon.svg"  alt="linkedin"/></a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://medium.com/@ali.reza.buet" ><img src="./icons/medium.svg" alt="medium"/></a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://github.com/AliRezaBmeDu"><img src="./icons/github.svg"  alt="github"/></a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://wellfound.com/u/mohammad-ali-reza" ><img src="./icons/angellist.svg" alt="angellist"/></a>
+                        </li>
+                    </ul>
+                    <button class="resume-button">Get my resume</button>
+                </div>
                     
+            </div>
+            <div class="myself-lang-desktop">
+                <div class="languages">
+                    <div class="languagebar">
+                        <h2>Languages</h2>
+                        <button class="lang-button"><img src="./icons/Icon - Chevron - Down - Larger.png" /></button>
+                    </div>                   
+                    <ul class="language-skill">
+                        <li>
+                            <div class="skill">
+                                <img class="mobile" src="./images/javs.png"/> 
+                                <img class="jav-img lang-img desktop" src="./images/Ellipse 1.png"/> 
+                                <p class="name-lang name-js">javaScript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill">
+                                <img class="mobile" src="./images/htm.png"/>
+                                <img class="desktop" src="./images/htm.png"/>  
+                                <p class="name-lang">HTML</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill">
+                                <img class="mobile" src="./images/design.png"/> 
+                                <img class="desktop" src="./images/design.png"/> 
+                                <p class="name-lang">CSS</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-            <div class="languages">
-                <div class="languagebar">
-                    <h2>Languages</h2>
-                    <button class="lang-button"><img src="./icons/Icon - Chevron - Down - Larger.png" /></button>
+                <div class="frameworks">
+                    <h2>Frameworks</h2>
+                    <button class="right"><img src="./icons/Icon - Chevron - Right - Larger.png" /></button>
                 </div>
-                
-                <ul class="language-skill">
-                    <li>
-                        <div class="skill">
-                            <img src="./images/javs.png"/> 
-                            <p class="name-lang">JavaScript</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill">
-                            <img src="./images/htm.png"/> 
-                            <p class="name-lang">HTML</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill">
-                            <img src="./images/design.png"/> 
-                            <p class="name-lang">CSS</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="hr"></div>
+                <div class="frameworks second">
+                    <h2>Skills</h2>
+                    <button class="right second-right"><img src="./icons/Icon - Chevron - Right - Larger.png" /></button>
+                </div>
+                <div class="hr second2"></div>
             </div>
-            
-            <div class="frameworks">
-                <h2>Frameworks</h2>
-                <button class="right"><img src="./icons/Icon - Chevron - Right - Larger.png" /></button>
-            </div>
-            <div class="hr"></div>
-            <div class="frameworks">
-                <h2>Skills</h2>
-                <button class="right"><img src="./icons/Icon - Chevron - Right - Larger.png" /></button>
-            </div>
-            
-            <div class="hr"></div>
-        
         </section>
 
         <section class="contact-me">
@@ -262,7 +310,7 @@
                     <button class="getintouch" type="submit">Get in touch</button>
                 </form>
             </div>
-            <div class="the-end"></div>
+            <div class="the-end mobile"></div>
             
         </section>
         
