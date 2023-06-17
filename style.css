@@ -107,14 +107,15 @@
 }
 
 .appbar {
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px) {
     position: relative;
     width: 100%;
     height: 7rem;
     left: 0;
     top: 0;
   }
-  @media screen and (min-width:767px) {
+
+  @media screen and (min-width: 767px) {
     height: 37px;
   }
 }
@@ -141,6 +142,7 @@
 .mylogo-desktop {
   position: relative;
   top: 5px;
+
   /* left: 37px; */
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -149,6 +151,7 @@
   line-height: 11.2px;
   align-items: center;
   text-align: center;
+  left: -5rem;
 }
 
 .toolbar-d > ul {
@@ -162,6 +165,8 @@
   font-weight: 500;
   font-size: 7.5px;
   line-height: 20px;
+  position: relative;
+  left: 7.5rem;
 }
 
 .mylogo-mobile {
@@ -221,7 +226,7 @@ button {
     background-size: 100% 99.5%;
     align-items: center;
     line-height: 10px;
-    justify-items: center;;
+    justify-items: center;
     height: 450px;
     width: 100%;
     margin-left: 2rem;
@@ -230,7 +235,7 @@ button {
 }
 
 .hero-text {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -238,7 +243,8 @@ button {
     width: 80%;
     padding: 0% 8% 0% 8%;
   }
-  @media screen and (min-width:767px) {
+
+  @media screen and (min-width: 767px) {
     margin-top: 9rem;
     display: flex;
     flex-direction: column;
@@ -247,7 +253,6 @@ button {
     width: 80%;
     padding: 0% 8% 0% 8%;
   }
-  
 }
 
 .hero_title {
@@ -267,7 +272,7 @@ button {
     font-size: 25.5px;
     line-height: 35.3px;
     top: 10px;
-    position:relative;
+    position: relative;
     left: -9rem;
   }
 }
@@ -330,12 +335,15 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
   @media only screen and (max-width: 767px) {
     width: 45%;
     height: 1rem;
   }
+
   list-style-type: none;
   padding-left: 0;
+
   @media only screen and (min-width: 767px) {
     width: 112px;
     height: 11px;
@@ -380,7 +388,8 @@ button {
 
 .overhead {
   display: flex;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     max-width: 100%;
     justify-content: space-between;
     position: relative;
@@ -388,11 +397,11 @@ button {
     left: -1.5em;
     padding-right: 0.5em;
   }
+
   @media only screen and (min-width: 767px) {
     flex-direction: row;
     font-size: 9.58px;
     top: 2px;
-    left: 11px;
     position: relative;
     left: -5.4em;
     width: 70%;
@@ -435,7 +444,6 @@ button {
   @media only screen and (min-width: 767px) {
     font-size: 8.51px;
     top: 17.1px;
-    left: 2px;
     line-height: 12.76px;
     width: 85%;
     position: relative;
@@ -461,6 +469,7 @@ button {
     left: -4.4em;
     gap: 0.1rem;
     padding: 4px 12px;
+
     /* width: 28.2px; */
     height: 12.76px;
     margin-top: 24px;
@@ -535,11 +544,13 @@ button {
     margin-left: 1.3rem;
     margin-top: 10rem;
   }
+
   background-repeat: no-repeat;
-  background-position: inherit; 
+  background-position: inherit;
   background-size: cover;
   position: relative;
   background-color: #fff;
+
   @media only screen and (min-width: 767px) {
     padding-left: 76px;
     margin: 0;
@@ -557,7 +568,9 @@ button {
     flex-direction: column;
     gap: 7px;
     width: 100%;
-    background-color: #5e75db;
+
+    /* background-color: #5e75db; */
+
     /* padding-left: 30px; */
     align-items: flex-start;
   }
@@ -571,10 +584,12 @@ button {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+
   @media only screen and (max-width: 767px) {
     display: flex;
     align-items: center;
   }
+
   @media only screen and (min-width: 767px) {
     font-size: 22px;
     position: relative;
@@ -596,6 +611,7 @@ button {
     width: 80%;
     font-size: 9px;
     line-height: 12.76px;
+    top: -0.7rem;
   }
 }
 
@@ -611,7 +627,7 @@ button {
     gap: 4px;
     position: relative;
     left: -6.8rem;
-
+    top: -0.5rem;
   }
 }
 
@@ -634,7 +650,7 @@ button {
     width: 112px;
     height: 11px;
     position: relative;
-    top: 2px;
+    top: 0.5rem;
     left: 1.1rem;
   }
 }
@@ -648,6 +664,7 @@ button {
     padding: 1em;
     margin: auto;
   }
+
   border: 1px solid;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -655,6 +672,7 @@ button {
   font-size: 1em;
   color: #6070ff;
   text-align: center;
+
   @media only screen and (min-width: 767px) {
     font-size: 9px;
     width: 86px;
@@ -663,7 +681,8 @@ button {
     border-radius: 4px;
     margin-top: 2em;
     position: relative;
-    left: 0.2rem;
+    left: 0.5rem;
+    top: 0.6rem;
   }
 }
 
@@ -672,7 +691,8 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #e3f826;
+
+    /* background-color: #e3f826; */
     gap: 19.2px;
     margin-left: -2em;
     margin-top: -0.3em;
@@ -733,7 +753,7 @@ button {
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
     position: relative;
-    left: -2.5rem;
+    left: -2.7rem;
   }
 }
 
@@ -741,7 +761,7 @@ button {
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
     position: relative;
-    left: -3.1rem;
+    left: -3.42rem;
   }
 }
 
@@ -764,9 +784,10 @@ button {
     margin-top: 1rem;
     margin-bottom: 1em;
   }
+
   @media screen and (min-width: 767px) {
     position: relative;
-    left: 1rem;
+    left: 1.8rem;
   }
 }
 
@@ -784,6 +805,7 @@ button {
 
 .language-skill {
   list-style-type: none;
+
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-top: 2rem;
@@ -803,6 +825,7 @@ button {
 
 .skill {
   display: flex;
+
   @media only screen and (min-width: 767px) {
     gap: 0.5em;
     border-radius: 8px;
@@ -812,9 +835,10 @@ button {
     text-align: center;
     margin-top: 0.8em;
   }
+
   background: #f7f7f9;
+
   @media only screen and (min-width: 767px) {
-    padding: 1px;
     width: 64px;
     flex-direction: column;
     height: 64px;
@@ -892,7 +916,7 @@ button {
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
     width: 100%;
-    position:relative;
+    position: relative;
   }
 }
 
@@ -902,18 +926,19 @@ button {
     margin-top: 1rem;
     margin-bottom: 1em;
   }
+
   @media screen and (min-width: 767px) {
     position: relative;
-    left: 0.8rem;
+    left: 1.4rem;
   }
 }
 
 .second-right {
-    @media screen and (min-width: 767px) {
-      position: relative;
-      left: 1.4rem;
-    }
+  @media screen and (min-width: 767px) {
+    position: relative;
+    left: 2rem;
   }
+}
 
 .hr {
   position: relative;
