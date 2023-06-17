@@ -529,16 +529,17 @@ button {
 }
 
 .myself {
+  @media only screen and (max-width: 767px) {
+    background-image: url("./images/Base\ about\ my\ self.png");
+    background-repeat: no-repeat;
+    background-position: inherit; 
+    background-size: cover;
+    margin-right: 1.3rem;
+    margin-left: 1.3rem;
+    margin-top: 10rem;
+  }
   position: relative;
   background-color: #fff;
-  background-image: url("./images/Base\ about\ my\ self.png");
-  background-repeat: no-repeat;
-  background-position: inherit;
-  background-size: cover;
-  margin-right: 1.3rem;
-  margin-left: 1.3rem;
-  margin-top: 10rem;
-
   @media only screen and (min-width: 767px) {
     padding-left: 76px;
     margin: 0;
@@ -558,7 +559,7 @@ button {
     gap: 7px;
     width: 100%;
 
-    /* background-color: #5e75db; */
+    background-color: #5e75db;
     padding-left: 30px;
   }
 }
@@ -668,7 +669,7 @@ button {
     flex-direction: column;
     width: 100%;
 
-    /* background-color: #e3f826; */
+    background-color: #e3f826;
     gap: 19.2px;
     margin-left: -2em;
     margin-top: -0.3em;
