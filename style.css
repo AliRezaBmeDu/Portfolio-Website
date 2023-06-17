@@ -531,13 +531,13 @@ button {
 .myself {
   @media only screen and (max-width: 767px) {
     background-image: url("./images/Base\ about\ my\ self.png");
-    background-repeat: no-repeat;
-    background-position: inherit; 
-    background-size: cover;
     margin-right: 1.3rem;
     margin-left: 1.3rem;
     margin-top: 10rem;
   }
+  background-repeat: no-repeat;
+  background-position: inherit; 
+  background-size: cover;
   position: relative;
   background-color: #fff;
   @media only screen and (min-width: 767px) {
@@ -546,7 +546,6 @@ button {
     margin-top: 6rem;
     display: flex;
     justify-content: space-between;
-    gap: -0;
     background-image: url("./images/desktop/about\ myself\ -\ background-\ shape-\ desktop.svg");
     width: 100%;
   }
@@ -558,9 +557,9 @@ button {
     flex-direction: column;
     gap: 7px;
     width: 100%;
-
     background-color: #5e75db;
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    align-items: flex-start;
   }
 }
 
@@ -572,11 +571,14 @@ button {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  display: flex;
-  align-items: center;
-
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
   @media only screen and (min-width: 767px) {
     font-size: 22px;
+    position: relative;
+    left: -4.5rem;
   }
 }
 
@@ -606,8 +608,10 @@ button {
     font-size: 8.5px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 4px;
+    position: relative;
+    left: -6.8rem;
+
   }
 }
 
@@ -631,7 +635,7 @@ button {
     height: 11px;
     position: relative;
     top: 2px;
-    left: 1px;
+    left: 1.1rem;
   }
 }
 
@@ -644,7 +648,6 @@ button {
     padding: 1em;
     margin: auto;
   }
-
   border: 1px solid;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -652,7 +655,6 @@ button {
   font-size: 1em;
   color: #6070ff;
   text-align: center;
-
   @media only screen and (min-width: 767px) {
     font-size: 9px;
     width: 86px;
@@ -660,6 +662,8 @@ button {
     padding: 6px;
     border-radius: 4px;
     margin-top: 2em;
+    position: relative;
+    left: 0.2rem;
   }
 }
 
@@ -668,7 +672,6 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
-
     background-color: #e3f826;
     gap: 19.2px;
     margin-left: -2em;
@@ -712,6 +715,8 @@ button {
 
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
+    position: relative;
+    left: -4em;
   }
 }
 
@@ -727,6 +732,16 @@ button {
 
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
+    position: relative;
+    left: -2.5rem;
+  }
+}
+
+.second > h2 {
+  @media only screen and (min-width: 767px) {
+    font-size: 11.2px;
+    position: relative;
+    left: -3.1rem;
   }
 }
 
@@ -749,6 +764,10 @@ button {
     margin-top: 1rem;
     margin-bottom: 1em;
   }
+  @media screen and (min-width: 767px) {
+    position: relative;
+    left: 1rem;
+  }
 }
 
 .lang-button > img {
@@ -764,39 +783,41 @@ button {
 }
 
 .language-skill {
-  width: 100%;
   list-style-type: none;
-
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-top: 2rem;
     position: relative;
     left: -2.5em;
+    width: 100%;
   }
 
   @media only screen and (min-width: 767px) {
     display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
+    gap: 6px;
+    width: 60%;
+    position: relative;
+    left: -3.25rem;
   }
 }
 
 .skill {
   display: flex;
-  gap: 0.5em;
-  background: #f7f7f9;
-  border-radius: 8px;
-  align-items: baseline;
-  padding-top: 1em;
-  padding-left: 1em;
-  text-align: center;
-  margin-top: 0.8em;
-
   @media only screen and (min-width: 767px) {
-    margin: auto;
+    gap: 0.5em;
+    border-radius: 8px;
+    align-items: baseline;
+    padding-top: 1em;
+    padding-left: 1em;
+    text-align: center;
+    margin-top: 0.8em;
+  }
+  background: #f7f7f9;
+  @media only screen and (min-width: 767px) {
+    padding: 1px;
+    width: 64px;
     flex-direction: column;
     height: 64px;
-    gap: 8.5px;
     padding: 0.5rem;
   }
 }
@@ -818,7 +839,15 @@ button {
   @media only screen and (min-width: 767px) {
     font-size: 8px;
     top: -0.5em;
-    left: 0.5em;
+    left: -1.5em;
+  }
+}
+
+.name-js {
+  @media only screen and (min-width: 767px) {
+    font-size: 8px;
+    top: -0.5em;
+    left: -0.3em;
   }
 }
 
@@ -863,6 +892,7 @@ button {
   @media only screen and (min-width: 767px) {
     font-size: 11.2px;
     width: 100%;
+    position:relative;
   }
 }
 
@@ -872,7 +902,18 @@ button {
     margin-top: 1rem;
     margin-bottom: 1em;
   }
+  @media screen and (min-width: 767px) {
+    position: relative;
+    left: 0.8rem;
+  }
 }
+
+.second-right {
+    @media screen and (min-width: 767px) {
+      position: relative;
+      left: 1.4rem;
+    }
+  }
 
 .hr {
   position: relative;
