@@ -983,6 +983,7 @@ button {
     padding-top: 2rem;
     background-image: url("./images/Contact\ me.png");
     background-size: cover;
+    height: 120%;
   }
 
   @media only screen and (min-width: 767px) {
@@ -1082,7 +1083,7 @@ button {
     width: 87.2%;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
 
   @media only screen and (min-width: 767px) {
@@ -1253,11 +1254,11 @@ button:active {
 }
 
 .the-end {
-  background-color: black;
+  /* background-color: black; */
   width: 40%;
   height: 0.3em;
   text-align: center;
   margin: auto;
   position: relative;
-  top: -8px;
+  top: 2rem;
 }

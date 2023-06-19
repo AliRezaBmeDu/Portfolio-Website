@@ -94,7 +94,7 @@ To run the project, execute the following command:
 
 ### Deployment
 
-This project can be deployed by using the github pages and other web plaform.
+This is the [live demo link](https://alirezabmedu.github.io/Portfolio-Website/) of the website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
