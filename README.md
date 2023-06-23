@@ -28,6 +28,9 @@
 
 **Portfolio-Website** aims to develop a responsive web portfolio page. In this initial phase this focuses mainly on building the mobile version first.
 
+
+Here is a short [video link](https://www.loom.com/share/338ac6899b4a4bcda4d7d10959e7663f?sid=3df38adc-f188-47aa-a6d6-653b755eb829) explaining what I have done in this portfolio so far, future prospects and the key learnings.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
