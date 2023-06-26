@@ -40,7 +40,7 @@
   }
 
   .mobile-menu {
-    /* display: none; */
+    display: none;
     position: absolute;
     flex-direction: column;
     justify-content: center;
@@ -78,6 +78,11 @@
     text-decoration: none;
     z-index: 5;
   }
+
+  .hide-seek {
+    display: none !important;
+  }
+
 }
 
 @media only screen and (min-width: 767px) {
@@ -149,7 +154,7 @@
     max-width: 800px;
   }
 
-  .mobile-menu {
+  .mobile-menu{
     display: none;
   }
 }
