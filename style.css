@@ -35,17 +35,21 @@
     display: none;
   }
 
-  .mobile {
-    display: none;
+  .blur-effect {
+    filter: blur(6px);
   }
+
+  .noblur {
+    filter: blur(0px);
+  }
+
 }
 .mobile-menu {
-  /* display: none; */
+  display: none;
   position: absolute;
   flex-direction: column;
   justify-content: center;
   top: 0;
-  color: white;
   background-color: #fff;
   width: 150%;
   height: 100vh;
@@ -53,33 +57,35 @@
   background-repeat: no-repeat;
   background-position: contain;
   opacity: 0.8;
-  margin-left: -2rem;
-  align-items: center;
+  /* align-items: center; */
   padding-top: 2rem;
+  z-index: 1;
 }
 
-.button-div {
-  display: flex;
-  justify-content: space-around;
-  padding-right: 1.3rem;
+.close-button {
+  position: relative;
+  left: 19rem;
 }
+
 
 .menu-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   list-style-type: none;
-  gap: 1.8rem;
+  gap: 2.5rem;
   padding-top: 1rem;
 }
 
 .menu-list li a {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   font-family: "poppins", sans-serif;
   text-decoration: none;
+  z-index: 5;
 }
+
 
 @media only screen and (min-width: 767px) {
   * {
@@ -258,7 +264,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: inherit;
 
