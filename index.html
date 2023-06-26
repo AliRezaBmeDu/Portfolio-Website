@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-
+        
+        
         <header class="appbar header">
             <div class = "toolbar mobile">
                 <div class="mylogo-mobile mobile">
@@ -22,6 +23,17 @@
                         <div class="burger"></div>
                     </button>
                 </nav>
+                <div class="mobile-menu">
+                    <div class="button-div">
+                        <div></div>
+                        <button id="close-button"><img src="./icons/icons_icon-cancel.png" /></button>
+                    </div>
+                    <ul class="menu-list">
+                        <li><a href="#works">Portfolio</a></li>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#contact-form">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <nav class = "toolbar-d desktop">
                 <div class="mylogo-desktop desktop"><a href="">My Logo</a></div>
@@ -65,7 +77,7 @@
             </div>
         </section>
         
-        <section class="project-grid">
+        <section id="works" class="project-grid">
             <!--First Project-->
             <div class="project-card">
                 <a href="" class="project-img desktop"><img src="./images/desktop/project01.png" /></a>
@@ -220,7 +232,7 @@
 
         </section>
 
-        <section class="myself">
+        <section id="about-me" class="myself">
             <div class="about">
                 <h2 class="about-title">About Myself</h2>
                 <p class="about-myself">
@@ -302,7 +314,7 @@
                     I’d love to help with it!
                 </p>
             
-                <form class="contact-form" 
+                <form class="contact-form" id="contact-form" 
                 action="https://formspree.io/f/xwkjgpya" method="POST">
                     <input class="input-box" type="text" placeholder="Lorem Ipsum" maxlength="30" name="name" required/>
                     <input class="input-box" type="email" placeholder="loremipsum@gmail.com" name="email" required/>

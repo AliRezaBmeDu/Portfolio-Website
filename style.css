@@ -34,6 +34,51 @@
   .desktop {
     display: none;
   }
+
+  .mobile {
+    display: none;
+  }
+}
+.mobile-menu {
+  /* display: none; */
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  color: white;
+  background-color: #fff;
+  width: 150%;
+  height: 100vh;
+  background-image: url("./images/Overlay.png");
+  background-repeat: no-repeat;
+  background-position: contain;
+  opacity: 0.8;
+  margin-left: -2rem;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 1.3rem;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 1.8rem;
+  padding-top: 1rem;
+}
+
+.menu-list li a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 767px) {
@@ -107,10 +152,12 @@
   }
 }
 
+
+
 .appbar {
   @media screen and (max-width: 767px) {
     position: relative;
-    width: 100%;
+    width: 375px;
     height: 7rem;
     left: 0;
     top: 0;
@@ -981,10 +1028,10 @@ button {
 
   @media only screen and (max-width: 767px) {
     padding: 0;
-    padding-top: 2rem;
+    padding-top: 1rem;
     background-image: url("./images/Contact\ me.png");
     background-size: cover;
-    height: 120%;
+    height: 100%;
   }
 
   @media only screen and (min-width: 767px) {
@@ -1084,7 +1131,6 @@ button {
     width: 87.2%;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 0.5rem;
   }
 
   @media only screen and (min-width: 767px) {
@@ -1193,12 +1239,12 @@ input::placeholder {
   background-color: white;
 
   @media only screen and (max-width: 767px) {
-    width: 40%;
+    width: 9rem;
     height: 48px;
     border-radius: 8px;
     border: 1px solid;
     padding: 12px 16px 12px 16px;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 24px;
   }
 
