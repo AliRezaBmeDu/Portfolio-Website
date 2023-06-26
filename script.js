@@ -25,3 +25,12 @@ closeButton.addEventListener('click', () => {
         subelements.style.display = "block";
       });
 });
+
+function closeMenu() {
+  menuPage.style.display = "none";
+  menuButton.style.display = "block";
+  excepSection.classList.remove('blur-effect');
+  otherComponents.forEach(subelements => {
+      subelements.style.display = "block";
+    });
+}
