@@ -213,7 +213,7 @@
 .toolbar-d {
   display: flex;
   justify-content: space-between;
-  padding: 3% 11%;
+  padding-top: 1.5rem;
   width: 100%;
 }
 
