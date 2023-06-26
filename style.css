@@ -39,10 +39,6 @@
     filter: blur(6px);
   }
 
-  .noblur {
-    filter: "0px";
-  }
-
 }
 .mobile-menu {
   display: none;
