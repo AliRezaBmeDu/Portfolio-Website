@@ -4,34 +4,34 @@ const closeButton = document.querySelector(".close-button");
 const otherComponents = document.querySelectorAll('section');
 const menuPage = document.querySelector(".mobile-menu");
 
-menuButton.addEventListener('click', openMenu());
-closeButton.addEventListener('click', closeMenu());
-
-function openMenu() {
+menuButton.addEventListener('click', () => {
+    console.log("Hello, it's being called");
     otherComponents.forEach(subelements => {
         subelements.style.display = "none";
       });
     excepSection.style.display = "block";
     menuPage.style.display = "block";
-    excepSection.classList.toggle('blur-effect');
-}
+    menuButton.style.display = "none";
+    excepSection.classList.add('blur-effect');
+});
 
-function closeMenu() {
+
+closeButton.addEventListener('click', () => {
+    console.log("Hello, closebutton is being called");
     menuPage.style.display = "none";
+    menuButton.style.display = "block";
+    excepSection.classList.remove('blur-effect');
     otherComponents.forEach(subelements => {
         subelements.style.display = "block";
       });
-    excepSection.classList.toggle('noblur');
+});
+
+
+function closeMenu() {
+    menuPage.style.display = "none";
+    menuButton.style.display = "block";
+    excepSection.classList.remove('blur-effect');
+    otherComponents.forEach(subelements => {
+        subelements.style.display = "block";
+      });
 }
-//////
-// const closeMenu = () => {
-//     mobileMenu.style.display = 'none';
-//     openIcon.style.display = 'block';
-//   };
-  
-//   openIcon.addEventListener('click', () => {
-//     openIcon.style.display = 'none';
-//     mobileMenu.style.display = 'block';
-//   });
-//   closeIcon.addEventListener('click', closeMenu);
-//   mobileLinks.addEventListener('click', closeMenu);

@@ -40,7 +40,7 @@
   }
 
   .noblur {
-    filter: blur(0px);
+    filter: "0px";
   }
 
 }
