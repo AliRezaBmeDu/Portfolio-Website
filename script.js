@@ -26,6 +26,17 @@ closeButton.addEventListener('click', () => {
       });
 });
 
+function openMenu() {
+    console.log("Hello, it's being called");
+    otherComponents.forEach(subelements => {
+        subelements.style.display = "none";
+      });
+    excepSection.style.display = "block";
+    menuPage.style.display = "block";
+    menuButton.style.display = "none";
+    excepSection.classList.add('blur-effect');
+}
+
 function closeMenu() {
   menuPage.style.display = "none";
   menuButton.style.display = "block";

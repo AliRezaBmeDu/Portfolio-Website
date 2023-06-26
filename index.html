@@ -15,7 +15,7 @@
                     <a href="">My Logo</a>
                 </div>
                 <nav class="menu-container mobile">
-                    <button class="button-burger mobile"  href="">
+                    <button class="button-burger mobile" onclick="openMenu()"  href="">
                         <div class="burger"></div>
                         <div class="burger"></div>
                         <div class="burger"></div>
@@ -23,13 +23,14 @@
                 </nav>
             </div>
             <div class="mobile-menu">
-                <button class="close-button"><img src="./icons/icons_icon-cancel.png" /></button>
+                <button class="close-button" onclick="closeMenu()"><img src="./icons/icons_icon-cancel.png" /></button>
                 <ul class="menu-list">
                     <li><a href="#works" onclick="closeMenu()">Portfolio</a></li>
                     <li><a href="#about-me" onclick="closeMenu()">About</a></li>
                     <li><a href="#contact-form" onclick="closeMenu()">Contact</a></li>
                 </ul>
             </div>
+
             <nav class = "toolbar-d desktop">
                 <div class="mylogo-desktop desktop"><a href="">My Logo</a></div>
                 <ul class="desktop navlist">
@@ -38,7 +39,6 @@
                   <li class="desktop">Contact</li>
                 </ul>
             </nav>
-            
         </header>
 
         <section class="myInfo main" id="home">
