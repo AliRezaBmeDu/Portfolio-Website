@@ -133,6 +133,30 @@
     object-fit: cover;
   }
 
+  .first-title {
+    font-size: 22px;
+    position: relative;
+    left: -7.5rem;
+  }
+
+  .second-title {
+    font-size: 22px;
+    position: relative;
+    left: -3.4rem;
+  }
+
+  .third-title {
+    font-size: 22px;
+    position: relative;
+    left: -4.8rem;
+  }
+
+  .fourth-title {
+    font-size: 22px;
+    position: relative;
+    left: -3.8rem;
+  }
+
   .about {
     margin-top: -1.4rem;
   }
@@ -458,14 +482,14 @@ button {
     top: 2px;
     position: relative;
     left: -5.4em;
-    width: 70%;
+    width: 13.5rem;
   }
 }
 
 .new {
   @media only screen and (min-width: 767px) {
-    width: 60%;
-    left: -4rem;
+    width: 16rem;
+    left: -2.5rem;
   }
 }
 
@@ -826,10 +850,6 @@ button {
   font-weight: 700;
   color: #172b4d;
   justify-items: baseline;
-
-  @media only screen and (min-width: 767px) {
-    font-size: 22px;
-  }
 }
 
 .lang-button {
