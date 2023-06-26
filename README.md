@@ -90,7 +90,9 @@ To run the project, execute the following command:
 
 > npx hint . 
 
-> npx stylelint "**/*.{css,scss}" 
+> npx stylelint "**/*.{css,scss}"
+
+> npx eslint .
 
 ### Deployment
 
