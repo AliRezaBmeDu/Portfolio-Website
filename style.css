@@ -6,8 +6,8 @@
     margin: auto;
   }
 
-  /*hidden in mobile version*/
-  .card{
+  /* hidden in mobile version */
+  .card {
     display: none !important;
   }
 
@@ -62,17 +62,11 @@
     transition: color 2s;
   }
 
-  .mylogo-mobile a:hover {
-    color: red;
-  }
-
   .myInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: inherit;
     background-image: url("./images/header-shapes\ mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,10 +106,6 @@
     position: relative;
     top: -1rem;
     padding: 0% 8% 0% 8%;
-  }
-
-  .contact-me {
-    height: 130vh;
   }
 
   .contact-text {
@@ -162,7 +152,6 @@
     background-color: #fff;
   }
 
-  
   .overhead {
     display: flex;
     width: 18rem;
@@ -394,13 +383,15 @@
   }
 
   .contact-me {
+    height: 130vh;
     background-color: #fff;
     margin-top: 5rem;
     padding: 0;
     padding-top: 2rem;
     background-image: url("./images/Contact\ me.png");
     background-size: cover;
-    height: 120%;
+
+    /* height: 120%; */
   }
 
   .contact-me-here {
@@ -621,7 +612,7 @@
     left: 1.2em;
   }
 
-  .desktop-popup{
+  .desktop-popup {
     display: none;
   }
 
@@ -769,6 +760,7 @@
   }
 
   .appbar {
+    max-width: 800px;
     height: 37px;
   }
 
@@ -848,7 +840,6 @@
     left: -9rem;
   }
 
-
   .hero_desc {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -914,7 +905,7 @@
     padding-left: 4rem;
   }
 
-  .project-docu{
+  .project-docu {
     position: relative;
     top: -2.5rem;
   }
@@ -982,20 +973,20 @@
     border-radius: 5px;
   }
 
-  /*-----------Desktop Popup---------------*/
+  /* -----------Desktop Popup--------------- */
   .card {
     width: 60vw;
     padding: 5rem;
     height: 50vh;
   }
-  
+
   .card h1 {
     font-size: 2.5rem;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     line-height: 3.25rem;
   }
-  
+
   .close-button {
     float: right;
     margin-top: -2rem;
@@ -1011,36 +1002,36 @@
     position: relative;
     left: -7rem;
   }
-  
+
   .list-item {
     flex: 1 1 auto;
     margin-right: 1rem; /* Add spacing between list items */
     font-size: 0.9375rem;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1.25rem;
     margin-bottom: 1rem;
   }
-  
+
   .list-item:first-child {
     font-weight: bold;
     list-style-type: none;
   }
-  
+
   .image {
     width: 100%;
     margin-bottom: 1rem;
   }
-  
+
   .content-div {
     display: flex;
   }
-  
+
   .left-div {
     width: 48rem;
     margin-right: 1.5rem;
   }
-  
+
   .right-div {
     width: 20rem;
   }
@@ -1050,61 +1041,61 @@
     width: 90%;
     flex-wrap: wrap;
     list-style-type: none;
-    position:relative;
+    position: relative;
     left: -2rem;
     top: -5rem;
-    
   }
 
-  .rightlist-div{
+  .rightlist-div {
     flex: 1 1 auto;
     margin-right: 0.5rem;
-    margin-bottom: 1rem; 
-    background-color: #EBEBFF;
+    margin-bottom: 1rem;
+    background-color: #ebebff;
     border-radius: 8px;
     height: 2rem;
     text-align: center;
     align-self: flex-start;
     font-size: 0.75rem;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1rem;
     letter-spacing: 0.0225rem;
-    padding:.5rem;
+    padding: 0.5rem;
   }
 
   .last-rightlistItem {
     position: relative;
     left: -3.2rem;
   }
+
   .second-last-rightlistItem {
     position: relative;
     left: -1rem;
   }
-  
+
   .buttons {
     display: flex;
     gap: 1em;
     position: relative;
     left: -1rem;
   }
-  
+
   .button-end {
     width: 7rem;
     height: 3rem;
     box-sizing: border-box;
     border: 2px solid #3496f1;
     border-radius: 8px;
+
     /* Add any additional styles for the buttons */
   }
 
-  .icon-img{
+  .icon-img {
     position: relative;
-    top:0.4rem;
+    top: 0.4rem;
   }
 
-  /*---------------end of Desktop Popup............*/
-
+  /* ---------------end of Desktop Popup............ */
 
   .myself {
     background-repeat: no-repeat;
@@ -1126,6 +1117,7 @@
     flex-direction: column;
     gap: 7px;
     width: 100%;
+    margin-top: -1.4rem;
 
     /* background-color: #5e75db; */
 
@@ -1458,7 +1450,7 @@
     margin-left: -2px;
     font-size: 9px;
     padding: 9px;
-    height: 90.5px;
+    height: 80%;
     width: 238px;
   }
 
@@ -1521,29 +1513,26 @@
     display: flex;
     width: 16rem;
     position: relative;
-    top:1rem;
+    top: 1rem;
     left: -2rem;
     list-style-type: none;
   }
 
-  
-  .dlastBuild{
+  .dlastBuild {
     position: relative;
     left: 1rem;
   }
 
-  .cssFor12{
+  .cssFor12 {
     position: relative;
     left: -1.2rem;
   }
 
   .build {
     background-color: #ebebff;
+
     /* width: 100%; */
     text-align: center;
-    height: 2rem;
-    border-radius: 8px;
-    padding: 0.8em;
     border: none;
     color: #6070ff;
     font-weight: 500;
@@ -1555,18 +1544,18 @@
 
   .bltwthTech-1 {
     left: -1rem;
-}
-.bltwthTech-2 {
-  left: -3.4rem;
-}
-.bltwthTech-3 {
-  left: -2.2rem;
-}
-.bltwthTech-4 {
-  left: -1.6rem;
-}
-  .about {
-    margin-top: -1.4rem;
+  }
+
+  .bltwthTech-2 {
+    left: -3.4rem;
+  }
+
+  .bltwthTech-3 {
+    left: -2.2rem;
+  }
+
+  .bltwthTech-4 {
+    left: -1.6rem;
   }
 
   .social-icons > li > a > img {
@@ -1579,24 +1568,14 @@
     /* width: 70%; */
   }
 
-  .message-box {
-    height: 80%;
-  }
-
-  .appbar {
-    max-width: 800px;
-  }
-
   .mobile-menu {
     display: none !important;
   }
 
   /* Desktop Pop-up */
-  .desktop-popup{
+  .desktop-popup {
     display: block;
   }
-
-
 }
 
 
@@ -1606,6 +1585,10 @@
 /* HOVERING PART */
 a:hover {
   cursor: pointer;
+}
+
+.mylogo-mobile a:hover {
+  color: red;
 }
 
 button {
