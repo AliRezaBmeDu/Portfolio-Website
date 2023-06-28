@@ -15,8 +15,8 @@ const proj_db = [
         descDesktop: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
         imgDesktop: "./images/desktop/project01.png",
         builtwithDesktop: ["HTML","CSS","javaScript"],
-        live:"",
-        sourceLink: "https://github.com/AliRezaBmeDu/Portfolio-Website"
+        live: "",
+        sourceLink: ""
         
     },
     {
@@ -35,8 +35,8 @@ const proj_db = [
         descDesktop: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
         imgDesktop: "./images/desktop/project02.png",
         builtwithDesktop: ["HTML","Ruby on rails","CSS","javaScript"],
-        live:"",
-        sourceLink: "https://github.com/AliRezaBmeDu/Portfolio-Website"
+        live: "",
+        sourceLink: ""
         
     },
     {
@@ -55,8 +55,8 @@ const proj_db = [
         descDesktop: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
         imgDesktop: "./images/desktop/project03.png",
         builtwithDesktop: ["HTML","Ruby on rails","CSS","javaScript"],
-        live:"",
-        sourceLink: "https://github.com/AliRezaBmeDu/Portfolio-Website"
+        live: "",
+        sourceLink: ""
         
     },
     {
@@ -75,8 +75,8 @@ const proj_db = [
         descDesktop: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
         imgDesktop: "./images/desktop/project04.png",
         builtwithDesktop: ["HTML","Ruby on rails","CSS","javaScript"],
-        live:"",
-        sourceLink: "https://github.com/AliRezaBmeDu/Portfolio-Website"
+        live: "",
+        sourceLink: ""
         
     }
 ]
@@ -115,7 +115,7 @@ for(i=0; i<4; i++){
     mFirstTitle.classList.add('title');
     const dFirstTitle = document.createElement('h1');
     dFirstTitle.textContent = proj_db[i].titleDesktop;
-    dFirstTitle.classList.add('desktop');
+    dFirstTitle.classList.add('desktop', 'titleD');
     //proj-overhead
     const dProjOverhead = document.createElement('div');
     dProjOverhead.classList.add('project-overhead');
@@ -123,6 +123,9 @@ for(i=0; i<4; i++){
     dOverhead.classList.add('overhead');
     if(i==0){
         dOverhead.classList.add('new');
+    }
+    if(i==1 || i==2){
+        dProjOverhead.classList.add('new12');
     }
     //mobile
         const mLiElem1 = document.createElement('li');
@@ -159,13 +162,15 @@ for(i=0; i<4; i++){
 
     const dProjectDetail = document.createElement('p'); //90no.line
     dProjectDetail.classList.add('project-detail','desktop');
-    dProjectDetail.textContent = proj_db[i].shortdescDesktop[i];
+    dProjectDetail.textContent = proj_db[i].shortdescDesktop;
+    console.log(proj_db[i].shortdescDesktop)
 
     const dBuiltWith = document.createElement('ul');
     dBuiltWith.classList.add('built-with');
     if(i==0){
         dBuiltWith.classList.add('newbltwth');
     }
+    dBuiltWith.classList.add(`bltwthTech-${i+1}`);
     //list of tech
     const dLiTech1 = document.createElement('li');
     const dLiButton1 = document.createElement('button');
@@ -189,6 +194,7 @@ for(i=0; i<4; i++){
     dLiButton2.classList.add('build');
     dLiButton2.textContent = 'CSS';
     dLiTech2.appendChild(dLiButton2);
+    dLiTech2.classList.add('lastbuild');
     dBuiltWith.appendChild(dLiTech2);
 
     const dLiTech3 = document.createElement('li');
@@ -228,7 +234,7 @@ for(i=0; i<4; i++){
 
 
 
-//--------Building Project Card for Mobile Version-----//
+//--------Building Project popup Card for Mobile Version-----//
 for(let i=0; i<4; i++){
     const projectCard = document.createElement("div"); //main card
     projectCard.id = `project-${i}`; //assigning an id to the project card
@@ -285,13 +291,13 @@ for(let i=0; i<4; i++){
     //live button
     const liveButton = document.createElement("div");
     liveButton.classList.add("button-popup"); // Add appropriate class for styling
-    liveButtonIcon.href = proj_db[i].sourceLink
+
     const liveButtonText = document.createElement("span");
     liveButtonText.textContent = "See live";
     const liveButtonIcon = document.createElement("img");
     liveButtonIcon.src = project.liveIcon;
     liveButtonIcon.classList.add("button-icon"); // Add appropriate class for styling
-
+    liveIcon.href = project.live;
     liveButton.appendChild(liveButtonText);
     liveButton.appendChild(liveButtonIcon);
 
@@ -307,7 +313,7 @@ for(let i=0; i<4; i++){
 
     sourceButton.appendChild(sourceButtonText);
     sourceButton.appendChild(sourceButtonIcon);
-
+    sourceButton.href = project.sourceLink;
 
     buttonsContainer.appendChild(liveButton);
     buttonsContainer.appendChild(sourceButton);
