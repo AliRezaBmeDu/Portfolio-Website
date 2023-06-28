@@ -445,7 +445,6 @@ for (i=0; i<4; i++){
 
 //...............Eventlistens...............//
 const seeBtns = document.querySelectorAll('.see');
-const seeDpops = document.querySelectorAll('.see-desktop');
 
 const otherComp = document.querySelectorAll('header, section');
 
