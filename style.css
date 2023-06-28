@@ -616,6 +616,9 @@
     left: 1.2em;
   }
 
+  .desktop-popup{
+    display: none;
+  }
 
   /* ProjectCard Pop-Up for mobile */
   .pro-mobile {
@@ -969,6 +972,84 @@
     left: 0.2rem;
     border-radius: 5px;
   }
+
+  /*-----------Desktop Popup---------------*/
+  .card {
+    width: 72rem;
+    padding: 1.5rem;
+  }
+  
+  .card h1 {
+    font-size: 2.5rem;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 3.25rem;
+  }
+  
+  .close-button {
+    float: right;
+    margin-top: -2rem;
+  }
+
+  .list-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    left: -7rem;
+  }
+  
+  /* .list-item {
+  } */
+  
+  .list-item {
+    flex: 1 1 auto;
+    margin-right: 1rem; /* Add spacing between list items */
+    font-size: 0.9375rem;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .list-item:first-child {
+    font-weight: bold;
+    list-style-type: none;
+  }
+  
+  .image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .content-div {
+    display: flex;
+  }
+  
+  .left-div {
+    width: 48rem;
+    margin-right: 1.5rem;
+  }
+  
+  .right-div {
+    width: 20rem;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .button-end {
+    width: 8rem;
+    height: 2rem;
+    /* Add any additional styles for the buttons */
+  }
+
+  /*---------------end of Desktop Popup............*/
+
 
   .myself {
     background-repeat: no-repeat;
@@ -1429,35 +1510,6 @@
 .bltwthTech-4 {
   left: -1.6rem;
 }
-  /* .built-with li {
-    @media only screen and (min-width: 767px) {
-      margin-right: 8px;
-    }
-  } */
-
-  /* 
-
-  .build {
-    background-color: #ebebff;
-    width: 100%;
-    text-align: center;
-    height: 2rem;
-    border-radius: 8px;
-    padding: 0.8em;
-    border: none;
-    color: #6070ff;
-    font-weight: 500;
-    height: 14px;
-    padding: 1px 6px;
-    font-size: 8.51px;
-    border-radius: 4px;
-  }
-
-  .bltwthTech-1{
-    background-color: yellow;
-
-  } */
-
   .about {
     margin-top: -1.4rem;
   }
@@ -1483,6 +1535,13 @@
   .mobile-menu {
     display: none !important;
   }
+
+  /* Desktop Pop-up */
+  .desktop-popup{
+    display: block;
+  }
+
+
 }
 
 
