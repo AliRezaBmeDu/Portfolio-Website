@@ -448,7 +448,10 @@ const seeBtns = document.querySelectorAll('.see');
 
 const otherComp = document.querySelectorAll('header, section');
 
-
+for(let i=0; i<4; i++){
+    const popupPage = document.getElementById(`project-${i}`);
+    popupPage.style.display = 'none';
+}
 
 seeBtns.forEach((item, index) => {
     item.addEventListener('click', () => {
