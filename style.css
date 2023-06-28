@@ -6,6 +6,11 @@
     margin: auto;
   }
 
+  /*hidden in mobile version*/
+  .card{
+    display: none !important;
+  }
+
   .appbar {
     position: relative;
     width: 100%;
@@ -755,6 +760,10 @@
     background-color: black;
   }
 
+  .hide-seek {
+    display: none !important;
+  }
+
   .mobile {
     display: none;
   }
@@ -1002,9 +1011,6 @@
     left: -7rem;
   }
   
-  /* .list-item {
-  } */
-  
   .list-item {
     flex: 1 1 auto;
     margin-right: 1rem; /* Add spacing between list items */
@@ -1037,15 +1043,61 @@
   .right-div {
     width: 20rem;
   }
+
+  .right-list {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    list-style-type: none;
+    position:relative;
+    left: -2rem;
+    top: -5rem;
+    
+  }
+
+  .rightlist-div{
+    flex: 1 1 auto;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem; 
+    background-color: #EBEBFF;
+    border-radius: 8px;
+    height: 2rem;
+    text-align: center;
+    align-self: flex-start;
+    font-size: 0.75rem;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: 0.0225rem;
+    padding:.5rem;
+  }
+
+  .last-rightlistItem {
+    position: relative;
+    left: -3.2rem;
+  }
+  .second-last-rightlistItem {
+    position: relative;
+    left: -1rem;
+  }
   
   .buttons {
     display: flex;
+    gap: 1em;
   }
   
   .button-end {
-    width: 8rem;
-    height: 2rem;
+    width: 7rem;
+    height: 3rem;
+    box-sizing: border-box;
+    border: 2px solid #3496f1;
+    border-radius: 8px;
     /* Add any additional styles for the buttons */
+  }
+
+  .icon-img{
+    position: relative;
+    top:0.4rem;
   }
 
   /*---------------end of Desktop Popup............*/

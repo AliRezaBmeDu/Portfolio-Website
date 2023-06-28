@@ -211,8 +211,12 @@ for(i=0; i<4; i++){
 
 
     const dSeeButton = document.createElement('button');
-    dSeeButton.classList.add('see');
+    dSeeButton.classList.add('see','desktop','see-desktop');
     dSeeButton.textContent = "See Project";
+
+    const mSeeButton = document.createElement('button');
+    mSeeButton.classList.add('see','mobile');
+    mSeeButton.textContent = "See Project";
 
     dProjDtop.appendChild(dFirstTitle);
     dProjDtop.appendChild(mFirstTitle);
@@ -221,6 +225,7 @@ for(i=0; i<4; i++){
     dProjDtop.appendChild(dProjectDetail);
     dProjDtop.appendChild(dBuiltWith);
     dProjDtop.appendChild(dSeeButton);
+    dProjDtop.appendChild(mSeeButton);
     dProjDtop.classList.add('project-docu');
 
     //changeblock
@@ -236,8 +241,6 @@ for(i=0; i<4; i++){
     
     workContainer.appendChild(singleProject);
 }
-
-
 
 //--------Building Project popup Card for Mobile Version-----//
 for(let i=0; i<4; i++){
@@ -333,136 +336,120 @@ for(let i=0; i<4; i++){
 }
 
 //--------Building Project popup Card for Desktop Version:: keyword: deskpop-----//
-
-// const project = proj_db[0];
-// const projectCard = document.createElement("div");
-// projectCard.classList.add("pro-deskpop");
-// const title = document.createElement("div");
-// title.classList.add("top-div-deskpop");
-// const h1 = document.createElement("h1");
-// h1.textContent = project.titleDesktop;
-// const closeBtn = document.createElement("button");
-// closeBtn.classList.add("close-btn-deskpop"); // Add appropriate class for styling
-// const closeButtonIcon = document.createElement("img");
-// closeButtonIcon.src = project.closeButtonIcon;
-// closeButtonIcon.classList.add("close-icon-deskpop"); // Add appropriate class for styling
-// closeBtn.appendChild(closeButtonIcon);
-// title.appendChild(h1);
-// title.appendChild(closeBtn);
-// const overhead = document.createElement("ul");
-// project.overheadMobile.forEach((item, index) => {
-//     const li = document.createElement("li");
-//     li.textContent = item;
-//     if (index === 0) {
-//     li.classList.add("first-child"); // Add a different class to the first child
-//     }
-//     overhead.appendChild(li);
-// });
-// overhead.classList.add('overheadPop');
-
-// projectCard.appendChild(title);
-// projectCard.appendChild(overhead);
-// document.body.appendChild(projectCard)
-
 //''''''''''''''''CGT...........//
-const popupCard = document.getElementById('popup-card');
 
-    // Create the title
-    const title = document.createElement('h1');
-    title.innerText = 'Title';
-    popupCard.appendChild(title);
+for (i=0; i<4; i++){
+    const project = proj_db[i];
+    const popupCard = document.createElement('div');
+    popupCard.id = `dpop-${i}`;
 
-    // Create the close button
-    const closeButtn = document.createElement('img');
-    closeButtn.src = './icons/closeButtonIcon.png';
-    closeButtn.alt = 'Close';
-    closeButtn.classList.add('close-button');
-    popupCard.appendChild(closeButtn);
 
-    // Create the unordered list
-    const list = document.createElement('ul');
-    list.classList.add('list-row');
-    const listItems = ['First item', 'Second item', 'Third item', 'Fourth item', 'Fifth item'];
+        // Create the title
+        const title = document.createElement('h1');
+        title.innerText = project.titleDesktop;
+        popupCard.appendChild(title);
 
-    for (let i = 0; i < listItems.length; i++) {
-      const listItem = document.createElement('li');
-      listItem.classList.add('list-item');
-      listItem.innerText = listItems[i];
-      list.appendChild(listItem);
-    }
+        // Create the close button
+        const closeButtn = document.createElement('img');
+        closeButtn.src = './icons/closeButtonIcon.png';
+        closeButtn.alt = 'Close';
+        closeButtn.classList.add('close-button');
+        popupCard.appendChild(closeButtn);
 
-    popupCard.appendChild(list);
+        // Create the unordered list
+        const list = document.createElement('ul');
+        list.classList.add('list-row');
+        const listItems = project.overheadDesktop;
 
-    // Create the image
-    const image = document.createElement('img');
-    image.src = './works/project01.png';
-    image.alt = 'Image';
-    image.classList.add('image');
-    popupCard.appendChild(image);
+        for (let i = 0; i < listItems.length; i++) {
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-item');
+        listItem.innerText = listItems[i];
+        list.appendChild(listItem);
+        }
 
-    // Create the parent div
-    const contentDiv = document.createElement('div');
-    contentDiv.classList.add('content-div');
+        popupCard.appendChild(list);
 
-    // Create the left div with a paragraph
-    const leftDiv = document.createElement('div');
-    leftDiv.classList.add('left-div');
-    const paragraph = document.createElement('p');
-    paragraph.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.";
-    leftDiv.appendChild(paragraph);
-    contentDiv.appendChild(leftDiv);
+        // Create the image
+        const image = document.createElement('img');
+        image.src = project.imgDesktop;
+        image.alt = 'Image';
+        image.classList.add('image');
+        popupCard.appendChild(image);
 
-    // Create the right div with an unordered list
-    const rightDiv = document.createElement('div');
-    rightDiv.classList.add('right-div');
-    const rightList = document.createElement('ul');
-    const rightListItems = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+        // Create the parent div
+        const contentDiv = document.createElement('div');
+        contentDiv.classList.add('content-div');
 
-    for (let i = 0; i < rightListItems.length; i++) {
-    const rightListItem = document.createElement('li');
-    rightListItem.innerText = rightListItems[i];
-    rightList.appendChild(rightListItem);
-    }
+        // Create the left div with a paragraph
+        const leftDiv = document.createElement('div');
+        leftDiv.classList.add('left-div');
+        const paragraph = document.createElement('p');
+        paragraph.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.";
+        leftDiv.appendChild(paragraph);
+        contentDiv.appendChild(leftDiv);
 
-    rightDiv.appendChild(rightList);
+        // Create the right div with an unordered list
+        const rightDiv = document.createElement('div');
+        rightDiv.classList.add('right-div');
+        const rightList = document.createElement('ul');
+        rightList.classList.add('right-list');
+        const rightListItems = ['HTML', 'javaScript', 'CSS', 'Bootstrap', 'Ruby'];
 
-    
-    // Create the buttons
-    const buttonsDiv = document.createElement('div');
-    buttonsDiv.classList.add('buttons');
-    const button1 = document.createElement('button');
-    button1.classList.add('button-end');
-    button1.innerText = 'Button 1';
-    const button2 = document.createElement('button');
-    button2.classList.add('button-end');
-    button2.innerText = 'Button 2';
+        for (let i = 0; i < rightListItems.length; i++) {
+            const rightListItem = document.createElement('li');
+            
+            const listItemDiv = document.createElement('div');
+            listItemDiv.classList.add('rightlist-div');
+            listItemDiv.innerText = rightListItems[i];
+            if (i==rightListItems.length-1){
+                listItemDiv.classList.add('last-rightlistItem');
+            }
+            if (i==rightListItems.length-2){
+                listItemDiv.classList.add('second-last-rightlistItem');
+            }
+            
+            rightListItem.appendChild(listItemDiv);
+            rightList.appendChild(rightListItem);
+        }
+        
+        rightDiv.appendChild(rightList);
 
-    buttonsDiv.appendChild(button1);
-    buttonsDiv.appendChild(button2);
-    rightDiv.appendChild(buttonsDiv);
+        rightDiv.appendChild(rightList);
 
-    contentDiv.appendChild(rightDiv);
+        
+        // Create the buttons
+        const buttonsDiv = document.createElement('div');
+        buttonsDiv.classList.add('buttons');
+        const button1 = document.createElement('button');
+        button1.classList.add('button-end');
+        button1.innerHTML = 'See Live   <img class="icon-img" src="./icons/liveIcon.png" alt="Live Icon">';
+        const button2 = document.createElement('button');
+        button2.classList.add('button-end');
+        button2.innerHTML = 'See Source   <img class="icon-img" src="./icons/sourceIcon.png" alt="source Icon">';
 
-    popupCard.appendChild(contentDiv);
+        buttonsDiv.appendChild(button1);
+        buttonsDiv.appendChild(button2);
+        rightDiv.appendChild(buttonsDiv);
 
-    // Append the popupCard to the document body
-    document.body.appendChild(popupCard);
+        contentDiv.appendChild(rightDiv);
+
+        popupCard.appendChild(contentDiv);
+
+        // Append the popupCard to the document body
+        document.body.appendChild(popupCard);
+}
 
 //.....................................
 
 
-
-
-
 //...............Eventlistens...............//
 const seeBtns = document.querySelectorAll('.see');
+const seeDpops = document.querySelectorAll('.see-desktop');
 
 const otherComp = document.querySelectorAll('header, section');
 
-for(let i=0; i<4; i++){
-    const popupPage = document.getElementById(`project-${i}`);
-    popupPage.style.display = 'none';
-}
+
 
 seeBtns.forEach((item, index) => {
     item.addEventListener('click', () => {
