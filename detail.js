@@ -103,11 +103,11 @@ for(i=0; i<4; i++){
     //first title
     const mFirstTitle = document.createElement('h1');
     mFirstTitle.textContent = proj_db[i].titleMobile;
-    mFirstTitle.classList.add('mobile')
-    mFirstTitle.classList.add('title1');
+    mFirstTitle.classList.add('mobile');
+    mFirstTitle.classList.add('title');
     const dFirstTitle = document.createElement('h1');
     dFirstTitle.textContent = proj_db[i].titleDesktop;
-    dFirstTitle.classList.add(`title${i+1}`,'desktop');
+    dFirstTitle.classList.add('desktop');
     //proj-overhead
     const dProjOverhead = document.createElement('div');
     dProjOverhead.classList.add('project-overhead');
@@ -186,6 +186,7 @@ for(i=0; i<4; i++){
     const dLiTech3 = document.createElement('li');
     const dLiButton3 = document.createElement('button');
     dLiButton3.classList.add('build');
+    dLiButton3.classList.add('lastBuild');
     dLiButton3.textContent = 'javaScript';
     dLiTech2.appendChild(dLiButton3);
     dBuiltWith.appendChild(dLiTech3);

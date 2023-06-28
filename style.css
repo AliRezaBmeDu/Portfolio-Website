@@ -88,6 +88,14 @@
     display: 'none';
   }
 
+  .title {
+    position: relative;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+  }
+
   
 
   /*ProjectCard Pop-Up for mobile*/
@@ -263,7 +271,7 @@
   .title1 {
     font-size: 22px;
     position: relative;
-    left: 4rem;
+    left: -7.5rem;
   }
 
   .title2 {
@@ -595,7 +603,7 @@ button {
   display: flex;
 
   @media screen and (max-width: 767px) {
-    max-width: 100%;
+    width: 18rem;
     justify-content: space-between;
     position: relative;
     top: -1em;
@@ -665,6 +673,7 @@ button {
   position: relative;
 
   @media screen and (max-width: 767px) {
+    width: 100%;
     position: relative;
     left: -1.5em;
   }
@@ -696,19 +705,31 @@ button {
   background-color: #ebebff;
   width: 100%;
   text-align: center;
-  height: 2.5rem;
+  height: 2rem;
   border-radius: 8px;
   padding: 0.8em;
   border: none;
   color: #6070ff;
   font-weight: 500;
-  font-size: 1em;
+  
+  @media only screen and (max-width: 767px) {
+    width: 5rem;
+    font-size: 0.7em;
+    gap:1em;
+  }
 
   @media only screen and (min-width: 767px) {
     height: 14px;
     padding: 1px 6px;
     font-size: 8.51px;
     border-radius: 4px;
+  }
+}
+
+.lastBuild {
+  @media only screen and (max-width: 767px) {
+    position: relative;
+    left: 1.2em;
   }
 }
 
