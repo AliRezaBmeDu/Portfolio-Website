@@ -984,8 +984,9 @@
 
   /*-----------Desktop Popup---------------*/
   .card {
-    width: 72rem;
-    padding: 1.5rem;
+    width: 60vw;
+    padding: 5rem;
+    height: 50vh;
   }
   
   .card h1 {
@@ -1084,6 +1085,8 @@
   .buttons {
     display: flex;
     gap: 1em;
+    position: relative;
+    left: -1rem;
   }
   
   .button-end {

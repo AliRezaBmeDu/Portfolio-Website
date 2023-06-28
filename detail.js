@@ -341,6 +341,7 @@ for(let i=0; i<4; i++){
 for (i=0; i<4; i++){
     const project = proj_db[i];
     const popupCard = document.createElement('div');
+    popupCard.classList.add('pro-desktop');
     popupCard.id = `dpop-${i}`;
 
 
@@ -445,12 +446,15 @@ for (i=0; i<4; i++){
 
 //...............Eventlistens...............//
 const seeBtns = document.querySelectorAll('.see-mobile');
+const seeDpopBtns = document.querySelectorAll('.see-desktop')
 
 const otherComp = document.querySelectorAll('header, section');
 
 for(let i=0; i<4; i++){
     const popupPage = document.getElementById(`project-${i}`);
+    const dpopPage = document.getElementById(`dpop-${i}`);
     popupPage.style.display = 'none';
+    dpopPage.style.display = 'none';
 }
 
 seeBtns.forEach((item, index) => {
@@ -464,12 +468,35 @@ seeBtns.forEach((item, index) => {
     });
 });
 
+seeDpopBtns.forEach( (item, index) => {
+    item.addEventListener('click', () => {
+        const dpopup = document.getElementById(`dpop-${index}`);
+        console.log("check it")
+        dpopup.style.display = 'block';
+        otherComp.forEach((subelements) => {
+            subelements.classList.add('hide-seek');
+          });
+    });
+});
+
+
 const closeButtons = document.querySelectorAll('.pro-mobile .close-btn')
+const dcloseBtns = document.querySelectorAll('.pro-desktop .close-button')
 
 closeButtons.forEach((btnClose, index) => {
     btnClose.addEventListener('click', () => {
         const popupPage = document.getElementById(`project-${index}`);
         popupPage.style.display = 'none';
+        otherComp.forEach((subelements) => {
+            subelements.classList.remove('hide-seek');
+          });
+    });
+});
+
+dcloseBtns.forEach((btnClose, index) => {
+    btnClose.addEventListener('click', () => {
+        const dpopPage = document.getElementById(`dpop-${index}`);
+        dpopPage.style.display = 'none';
         otherComp.forEach((subelements) => {
             subelements.classList.remove('hide-seek');
           });
