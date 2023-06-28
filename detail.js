@@ -109,6 +109,7 @@ for(i=0; i<4; i++){
     //proj-desktop:: first key letter-d
     const dProjDtop = document.createElement('div'); //81no.line
     //first title
+    
     const mFirstTitle = document.createElement('h1');
     mFirstTitle.textContent = proj_db[i].titleMobile;
     mFirstTitle.classList.add('mobile');
@@ -195,12 +196,15 @@ for(i=0; i<4; i++){
     dLiButton2.textContent = 'CSS';
     dLiTech2.appendChild(dLiButton2);
     dLiTech2.classList.add('lastbuild');
+    if(i==0 || i==1){
+        dLiTech2.classList.add('cssFor12');
+    }
     dBuiltWith.appendChild(dLiTech2);
 
     const dLiTech3 = document.createElement('li');
     const dLiButton3 = document.createElement('button');
     dLiButton3.classList.add('build');
-    dLiButton3.classList.add('lastBuild');
+    dLiButton3.classList.add('dlastBuild');
     dLiButton3.textContent = 'javaScript';
     dLiTech2.appendChild(dLiButton3);
     dBuiltWith.appendChild(dLiTech3);
@@ -217,6 +221,7 @@ for(i=0; i<4; i++){
     dProjDtop.appendChild(dProjectDetail);
     dProjDtop.appendChild(dBuiltWith);
     dProjDtop.appendChild(dSeeButton);
+    dProjDtop.classList.add('project-docu');
 
     //changeblock
     if(i==0 || i==2){
