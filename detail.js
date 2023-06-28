@@ -215,7 +215,7 @@ for(i=0; i<4; i++){
     dSeeButton.textContent = "See Project";
 
     const mSeeButton = document.createElement('button');
-    mSeeButton.classList.add('see','mobile');
+    mSeeButton.classList.add('see','mobile','see-mobile');
     mSeeButton.textContent = "See Project";
 
     dProjDtop.appendChild(dFirstTitle);
@@ -444,7 +444,7 @@ for (i=0; i<4; i++){
 
 
 //...............Eventlistens...............//
-const seeBtns = document.querySelectorAll('.see');
+const seeBtns = document.querySelectorAll('.see-mobile');
 
 const otherComp = document.querySelectorAll('header, section');
 
