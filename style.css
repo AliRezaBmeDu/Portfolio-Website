@@ -2,7 +2,6 @@
 
 @media (min-width: 375px) and (max-width: 767px) {
   body {
-    /* max-width: 375px; */
     margin: auto;
   }
 
@@ -390,8 +389,6 @@
     padding-top: 2rem;
     background-image: url("./images/Contact\ me.png");
     background-size: cover;
-
-    /* height: 120%; */
   }
 
   .contact-me-here {
@@ -536,8 +533,6 @@
     height: 100vh;
     background-image: url("./images/Overlay.png");
     background-repeat: no-repeat;
-
-    /* background-position: contain; */
     opacity: 0.8;
     padding-top: 2rem;
     z-index: 1;
@@ -570,9 +565,6 @@
     display: none !important;
   }
 
-  /* .project-card-popup {
-    display: none;
-  } */
 
   .title {
     position: relative;
@@ -729,7 +721,6 @@
     font-weight: 500;
     line-height: 1.25rem;
   }
-
   /* end of mobile pop-up details */
 }
 
@@ -963,8 +954,6 @@
     text-align: center;
     margin-left: 1em;
     margin-top: 1.5rem;
-
-    /* width: 67px; */
     height: 25.53px;
     padding: 7px;
     font-size: 9px;
@@ -1086,8 +1075,6 @@
     box-sizing: border-box;
     border: 2px solid #3496f1;
     border-radius: 8px;
-
-    /* Add any additional styles for the buttons */
   }
 
   .icon-img {
@@ -1118,10 +1105,6 @@
     gap: 7px;
     width: 100%;
     margin-top: -1.4rem;
-
-    /* background-color: #5e75db; */
-
-    /* padding-left: 30px; */
     align-items: flex-start;
   }
 
@@ -1195,8 +1178,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    /* background-color: #e3f826; */
     gap: 19.2px;
     margin-left: -2em;
     margin-top: -0.3em;
@@ -1467,9 +1448,6 @@
     border-radius: 4px;
   }
 
-  /* .project-card {
-  } */
-
   .project-desktop {
     display: flex;
     flex-direction: column;
@@ -1480,8 +1458,6 @@
     @media screen and (min-width: 767px) {
       margin-top: 25.7px;
     }
-
-    /* height: 80%; */
   }
 
   .project-img > img {
@@ -1530,8 +1506,6 @@
 
   .build {
     background-color: #ebebff;
-
-    /* width: 100%; */
     text-align: center;
     border: none;
     color: #6070ff;
@@ -1564,8 +1538,6 @@
 
   .footside > li > a > img {
     height: 12px;
-
-    /* width: 70%; */
   }
 
   .mobile-menu {
@@ -1637,7 +1609,6 @@ button:active {
 }
 
 .the-end {
-  /* background-color: black; */
   width: 40%;
   height: 0.3em;
   text-align: center;

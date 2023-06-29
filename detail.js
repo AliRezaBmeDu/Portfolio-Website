@@ -81,10 +81,6 @@ const projDB = [
   },
 ];
 
-// const buttonID = {
-//   see1: 0, see2: 1, see3: 2, see4: 3,
-// };
-
 // ........Building the Work Section........//
 
 const workContainer = document.getElementById('works');
@@ -107,9 +103,8 @@ for (let i = 0; i < 4; i += 1) {
   imgMobile.src = projDB[i].imgMobile;
   imgWrapMobile.appendChild(imgMobile);
   // proj-desktop:: first key letter-d
-  const dProjDtop = document.createElement('div'); // 81no.line
+  const dProjDtop = document.createElement('div'); 
   // first title
-
   const mFirstTitle = document.createElement('h1');
   mFirstTitle.textContent = projDB[i].titleMobile;
   mFirstTitle.classList.add('mobile');
@@ -248,7 +243,6 @@ for (let i = 0; i < 4; i += 1) {
   const projectCard = document.createElement('div'); // main card
   projectCard.id = `project-${i}`; // assigning an id to the project card
   const project = projDB[i];
-  // console.log("checkpoint 1");
   projectCard.classList.add('pro-mobile');
 
   const title = document.createElement('div');
@@ -337,8 +331,6 @@ for (let i = 0; i < 4; i += 1) {
 }
 
 // --------Building Project popup Card for Desktop Version:: keyword: deskpop-----//
-// ''''''''''''''''CGT...........//
-
 for (let i = 0; i < 4; i += 1) {
   const project = projDB[i];
   const popupCard = document.createElement('div');
@@ -440,8 +432,6 @@ for (let i = 0; i < 4; i += 1) {
   document.body.appendChild(popupCard);
 }
 
-// .....................................
-
 // ...............Eventlistens...............//
 const seeBtns = document.querySelectorAll('.see-mobile');
 const seeDpopBtns = document.querySelectorAll('.see-desktop');
@@ -505,23 +495,3 @@ dcloseBtns.forEach((btnClose, index) => {
     target.scrollIntoView(true);
   });
 });
-
-// closeBtn.addEventListener('click', () => {
-//     console.log("Hey, close button pressed!");
-//     otherComp.forEach((subelements) => {
-//         subelements.classList.remove('hide-seek');
-//       });
-//       result.forEach((proj_cont) => {
-//         proj_cont.style.display = 'none';
-//       })
-
-//       const target = document.getElementById(flag)
-//       target.scrollIntoView();
-
-// });
-
-// for (let i=0; i<4; i += 1){
-//     let name = ".see"+ (i+1).toString();
-//     const seeButton = document.querySelector('.see1');
-
-// }
