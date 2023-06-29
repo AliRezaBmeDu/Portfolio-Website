@@ -1460,7 +1460,6 @@
     border-radius: 4px;
   }
 
-
   .project-desktop {
     display: flex;
     flex-direction: column;
@@ -1471,7 +1470,6 @@
     @media screen and (min-width: 767px) {
       margin-top: 25.7px;
     }
-
   }
 
   .project-img > img {
@@ -1486,16 +1484,19 @@
     position: relative;
     left: -8rem;
   }
+
   .title2 {
     font-size: 22px;
     position: relative;
     left: -3.6rem;
   }
+
   .title3 {
     font-size: 22px;
     position: relative;
     left: -5.1rem;
   }
+
   .title4 {
     font-size: 22px;
     position: relative;
@@ -1606,8 +1607,8 @@ button {
 
 .error-message {
   position: absolute;
-  background-color: #ff0000;
-  color: #ffffff;
+  background-color: #f00;
+  color: #fff;
   padding: 8px;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
