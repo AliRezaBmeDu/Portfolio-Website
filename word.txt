@@ -1,54 +1,151 @@
- <section id="video-comments">                      
-                <div id="comment-user-log">
-                    <img id="comment-user-log-img" class="comment-img" src="css/img/user-log.jpg" alt="">
-                   <input id="make-comment" type="text" placeholder="write ...">
+           <!--First Project-->
+            <div class="project-card" id="1-project">
+                <a href="" class="project-img desktop"><img src="./images/desktop/project01.png" /></a>
+                <a href="" class="project-img mobile"><img src="./works/project01.png" /></a>
+                <div class="project-desktop">
+                    <h2 class="title1">Tonic</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead new">
+                            <li class="overhead-1">Canopy</li>
+                            <li>Back End Dev</li>
+                            <li>2015</li>
+                        </ul>
+                    </div>
+                    <p class="project-detail">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <ul class="built-with newbltwth">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">JavaScript</button>
+                        </li>
+                    </ul>
+                    <button class="see see1">See Project</button>
                 </div>
-                <div id="users-comments">
-                    <div id="comment1" class="users-comments">
-                        <img id="comment-user-img" class="comment-img" src="css/img/userimg.jpg" alt="">
-
-                            <h5  id="user-name">
-                                @Userdessc11433
-                            </h5>
-                            <div id="comment" >
-                                <h4>A remark to what happening at 04:12 is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</h4>
-                            </div>
-                            <div id="likes-unlikes">
-                                <img id="comment-like" src="css/img/like.png" alt="">
-                                <img id="comment-unlike" src="css/img/unlike.png" alt="">
-                                <p>Replay</p>
-                            </div>
+            </div>
+            
+            <!--Second Project-->
+            <div class="project-card" id="second-project">
+                <a href="" class="project-img mobile"><img src="./works/project02.png" /></a>
+                <div class="project-desktop">
+                    <h2 class="title2">Multi-Post Stories</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead">
+                            <li class="overhead-1 mobile">Canopy</li>
+                            <li class="overhead-1 desktop">Facebook</li>
+                            <li class="mobile">Back End Dev</li>
+                            <li class="desktop">Full Stack Dev</li>
+                            <li>2015</li>
+                        </ul>
                     </div>
-
-                    <div id="comment2" class="users-comments">
-                        <img id="comment-user-img" class="comment-img" src="css/img/userimg.jpg" alt="">
-
-                            <h5  id="user-name">
-                                @FlokyFfloky11433
-                            </h5>
-                            <div id="comment" >
-                                <h4>A redfg515616516515612dd5d5d5d5d5drk to what happening at 04:12 is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</h4>
-                            </div>
-                            <div id="likes-unlikes">
-                                <img id="comment-like" src="css/img/like.png" alt="">
-                                <img id="comment-unlike" src="css/img/unlike.png" alt="">
-                                <p>Replay</p>
-                            </div>
-                    </div>
-                    <div id="comment2" class="users-comments">
-                        <img id="comment-user-img" class="comment-img" src="css/img/userimg.jpg" alt="">
-
-                            <h5  id="user-name">
-                                @Cabitocabbito
-                            </h5>
-                            <div id="comment" >
-                                <h4>A reeenen.</h4>
-                            </div>
-                            <div id="likes-unlikes">
-                                <img id="comment-like" src="css/img/like.png" alt="">
-                                <img id="comment-unlike" src="css/img/unlike.png" alt="">
-                                <p>Replay</p>
-                            </div>
-                    </div>
+                    <p class="project-detail mobile">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <p class="project-detail desktop">
+                        Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+                    </p>
+                    <ul class="built-with">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li class="desktop">
+                            <button class="build dekstop">Ruby on rails</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">javaScript</button>
+                        </li>
+                    </ul>
+                    <button class="see see2">See Project</button>
                 </div>
-    </section> 
+                <a href="" class="project-img desktop"><img src="./images/desktop/project02.png" /></a>
+            </div>
+
+             <!--Third Project-->
+             <div class="project-card" id="third-project">
+                <a href="" class="project-img mobile"><img src="./works/project03.png" /></a>
+                <a href="" class="project-img desktop"><img src="./images/desktop/project03.png" /></a>
+                <div class="project-desktop">
+                    <h2 class="mobile">Tonic</h2>
+                    <h2 class="desktop title3">Facebook 360</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead">
+                            <li class="overhead-1 mobile">Canopy</li>
+                            <li class="overhead-1 desktop">FACEBOOK</li>
+                            <li class="mobile">Back End Dev</li>
+                            <li class="desktop">Full Stack Dev</li>
+                            <li>2015</li>
+                        </ul>
+                    </div>
+                    <p class="project-detail mobile">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <p class="project-detail desktop">
+                        Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                    </p>
+                    
+                    <ul class="built-with">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li class="desktop">
+                            <button class="build dekstop">Ruby on rails</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">JavaScript</button>
+                        </li>
+                    </ul>
+                    <button class="see see3">See Project</button>
+                </div>
+            </div>
+
+             <!--Fourth Project-->
+             <div class="project-card" id="fourth-project">
+                <a href="" class="project-img mobile"><img src="./works/project04.png" /></a>
+                <div class="project-desktop">
+                    <h2 class="mobile">Multi-Post Stories</h2>
+                    <h2 class="desktop title-4">Uber Navigation</h2>
+                    <div class="project-overhead">
+                        <ul class="overhead new">
+                            <li class="overhead-1 mobile">Canopy</li>
+                            <li class="mobile">Back End Dev</li>
+                            <li class="mobile">2015</li>
+                            <li class="overhead-1 desktop">Uber</li>
+                            <li class="desktop">Lead Developer</li>
+                            <li class="desktop">2018</li>
+                        </ul>
+                    </div>
+                    <p class="project-detail mobile">
+                        A daily selection of privately personalized reads; no accounts or sign-ups required.
+                    </p>
+                    <p class="project-detail desktop">
+                        A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+                    </p>
+                    <ul class="built-with">
+                        <li>
+                            <button class="build">HTML</button>
+                        </li>
+                        <li class="desktop">
+                            <button class="build dekstop">Ruby on rails</button>
+                        </li>
+                        <li>
+                            <button class="build">CSS</button>
+                        </li>
+                        <li>
+                            <button class="build">JavaScript</button>
+                        </li>
+                    </ul>
+                    <button class="see see4">See Project</button>
+                </div>
+                <a href="" class="project-img desktop"><img src="./images/desktop/project04.png" /></a>
+            </div>
