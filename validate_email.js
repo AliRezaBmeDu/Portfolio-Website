@@ -35,6 +35,13 @@ form.addEventListener('submit', (event) => {
         //Append the error message to the document body
         document.body.appendChild(errorMessage);
 
+        //function to disappear the errorMessage
+        document.body.addEventListener('click', function() {
+          if (errorMessage) {
+            errorMessage.remove();
+            errorMessage = null; 
+          }
+        });
     }
     return false
   }
