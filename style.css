@@ -5,7 +5,6 @@
     margin: auto;
   }
 
-  /* hidden in mobile version */
   .card {
     display: none !important;
   }
