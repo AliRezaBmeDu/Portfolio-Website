@@ -964,8 +964,6 @@
     text-align: center;
     margin-left: 1em;
     margin-top: 1.5rem;
-
-    /* width: 67px; */
     height: 25.53px;
     padding: 7px;
     font-size: 9px;
@@ -1119,10 +1117,6 @@
     gap: 7px;
     width: 100%;
     margin-top: -1.4rem;
-
-    /* background-color: #5e75db; */
-
-    /* padding-left: 30px; */
     align-items: flex-start;
   }
 
@@ -1196,8 +1190,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    /* background-color: #e3f826; */
     gap: 19.2px;
     margin-left: -2em;
     margin-top: -0.3em;
@@ -1468,8 +1460,6 @@
     border-radius: 4px;
   }
 
-  /* .project-card {
-  } */
 
   .project-desktop {
     display: flex;
@@ -1482,7 +1472,6 @@
       margin-top: 25.7px;
     }
 
-    /* height: 80%; */
   }
 
   .project-img > img {
@@ -1613,6 +1602,14 @@ button {
   width: 1.5em;
   height: 0.3em;
   margin: 0.3em 0;
+}
+
+.error-message {
+  position: absolute;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .message-box,
