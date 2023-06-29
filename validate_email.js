@@ -27,7 +27,7 @@ form.addEventListener('submit', (event) => {
         //Create the error message element
         var errorMessage = document.createElement('div');
         errorMessage.className = 'error-message';
-        errorMessage.innerHTML = 'Error: Something went wrong!';
+        errorMessage.innerHTML = 'please make sure your email is in small letters';
         //Set the position of the error message
         errorMessage.style.top = (lastElementRect.bottom + window.scrollY) + 'px';
         errorMessage.style.left = (lastElementRect.right + window.scrollX) + 'px';
