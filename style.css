@@ -916,13 +916,13 @@
     font-size: 9.58px;
     top: 2px;
     position: relative;
-    left: -5.4em;
+    left: -6.2em;
     width: 13.5rem;
   }
 
   .new {
     width: 16rem;
-    left: -0.8rem;
+    left: -3rem;
   }
 
   .overhead-1 {
@@ -931,6 +931,7 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
+    position: relative;
   }
 
   .overhead :not(.overhead-1) {
@@ -1494,7 +1495,22 @@
   .title1 {
     font-size: 22px;
     position: relative;
-    left: -7.5rem;
+    left: -8rem;
+  }
+  .title2 {
+    font-size: 22px;
+    position: relative;
+    left: -3.6rem;
+  }
+  .title3 {
+    font-size: 22px;
+    position: relative;
+    left: -5.1rem;
+  }
+  .title4 {
+    font-size: 22px;
+    position: relative;
+    left: -4rem;
   }
 
   .titleD {
