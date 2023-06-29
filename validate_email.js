@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
   //function to check if the email text has any error or not
   function validEmail(email){
     console.log(email)
-    const testRegex = /[A-Z&#~!$]/;
+    const testRegex = /[A-Z]/;
     console.log(testRegex.test(email));
     if(testRegex.test(email)){
         console.log('invalid-email');
@@ -27,7 +27,8 @@ form.addEventListener('submit', (event) => {
         //Create the error message element
         var errorMessage = document.createElement('div');
         errorMessage.className = 'error-message';
-        errorMessage.innerHTML = 'please make sure your email is in small letters';
+        errorMessage.innerHTML = 'Email should be in small letters';
+
         //Set the position of the error message
         errorMessage.style.top = (lastElementRect.bottom + window.scrollY) + 'px';
         errorMessage.style.left = (lastElementRect.right + window.scrollX) + 'px';
@@ -42,6 +43,7 @@ form.addEventListener('submit', (event) => {
             errorMessage = null; 
           }
         });
+        return false
     }
-    return false
+    return true
   }

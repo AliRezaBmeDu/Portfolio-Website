@@ -1583,7 +1583,7 @@
   }
 }
 
-/* HOVERING PART */
+/* HOVERING and ERRORMESSAGE PART */
 a:hover {
   cursor: pointer;
 }
@@ -1608,8 +1608,10 @@ button {
   position: absolute;
   background-color: #ff0000;
   color: #ffffff;
-  padding: 5px;
+  padding: 8px;
   border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
 }
 
 .message-box,
