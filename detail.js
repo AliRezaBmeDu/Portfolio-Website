@@ -103,7 +103,7 @@ for (let i = 0; i < 4; i += 1) {
   imgMobile.src = projDB[i].imgMobile;
   imgWrapMobile.appendChild(imgMobile);
   // proj-desktop:: first key letter-d
-  const dProjDtop = document.createElement('div'); 
+  const dProjDtop = document.createElement('div');
   // first title
   const mFirstTitle = document.createElement('h1');
   mFirstTitle.textContent = projDB[i].titleMobile;

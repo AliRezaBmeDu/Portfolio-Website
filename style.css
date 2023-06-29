@@ -565,7 +565,6 @@
     display: none !important;
   }
 
-
   .title {
     position: relative;
     left: 1rem;
@@ -721,7 +720,6 @@
     font-weight: 500;
     line-height: 1.25rem;
   }
-  /* end of mobile pop-up details */
 }
 
 .project-card-popup {
