@@ -13,9 +13,9 @@ function updateStorage() {
   );
 }
 
-fullname.oninput = updateStorage;
-email.oninput = updateStorage;
-comment.oninput = updateStorage;
+// fullname.oninput = updateStorage;
+// email.oninput = updateStorage;
+// comment.oninput = updateStorage;
 
 // function populateInput() {
 //   const retrievedItem = JSON.parse(localStorage.getItem('userDetails'));
