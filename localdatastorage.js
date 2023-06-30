@@ -6,9 +6,9 @@ function updateStorage() {
   localStorage.setItem(
     'userDetails',
     JSON.stringify({
-        name: fullname.value,
-        email: email.value,
-        message: comment.value,
+      name: fullname.value,
+      email: email.value,
+      message: comment.value,
     }),
   );
 }
