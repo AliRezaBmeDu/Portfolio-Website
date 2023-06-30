@@ -4,7 +4,7 @@ const emailInput = form.elements.userEmail;
 // function to check if the email text has any error or not
 function validEmail(email) {
   console.log(email);
-  const testRegex = /[A-Z]/;
+  const testRegex = /A-Z/;
   console.log(testRegex.test(email));
   if (testRegex.test(email)) {
     console.log('invalid-email');
