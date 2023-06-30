@@ -13,17 +13,19 @@ function updateStorage() {
   );
 }
 
-// fullname.oninput = updateStorage;
-// email.oninput = updateStorage;
-// comment.oninput = updateStorage;
+// Add populate input field function
 
-// function populateInput() {
-//   const retrievedItem = JSON.parse(localStorage.getItem('userDetails'));
-//   fullname.value = retrievedItem.name;
-//   email.value = retrievedItem.email;
-//   comment.value = retrievedItem.message;
-// }
+fullname.oninput = updateStorage;
+email.oninput = updateStorage;
+comment.oninput = updateStorage;
 
-// if (localStorage.getItem('userDetails')) {
-//   populateInput();
-// }
+function populateInput() {
+  const retrievedItem = JSON.parse(localStorage.getItem('userDetails'));
+  fullname.value = retrievedItem.name;
+  email.value = retrievedItem.email;
+  comment.value = retrievedItem.message;
+}
+
+if (localStorage.getItem('userDetails')) {
+  populateInput();
+}
