@@ -160,9 +160,9 @@
             
                 <form class="contact-form" id="contact-form" 
                 action="https://formspree.io/f/xwkjgpya" method="POST">
-                    <input class="input-box" type="text" placeholder="Lorem Ipsum" maxlength="30" name="name" required/>
-                    <input class="input-box" type="email" placeholder="loremipsum@gmail.com" name="email" required/>
-                    <textarea class="message-box" maxlength="500" name="message" placeholder="Write your message here..." required></textarea>
+                    <input class="input-box" id="name" type="text" placeholder="Lorem Ipsum" maxlength="30" name="name" required/>
+                    <input class="input-box" id="email" type="email" placeholder="loremipsum@gmail.com" name="email" required/>
+                    <textarea class="message-box" id="comment" maxlength="500" name="message" placeholder="Write your message here..." required></textarea>
                     <button class="getintouch" type="submit">Get in touch</button>
                 </form>
             </div>
@@ -173,5 +173,6 @@
         <div id="popup-card"></div>
         <script src="./script.js"></script>
         <script src="./detail.js"></script>
+        <script src="./localdatastorage.js"></script>
     </body>
 </html>
